@@ -1,0 +1,1502 @@
+.charsheet {
+    background-color: black;
+    background-repeat: no-repeat;
+    color: black;
+    background-image: url("https://i.imgur.com/JVrHOio.png");
+    width: 888px;
+    height: 493px;
+}
+
+.charsheet button.roller {
+    height: 20px;
+    width: 30px;
+}
+
+.charsheet label {
+    color: white;
+}
+
+.charsheet div.sheet-section {
+    display: grid;
+    border-radius: 18px;
+    justify-content: left;
+    padding: 5px;
+    border: 3px solid #1d7763;
+}
+
+.charsheet button.force-feat-button {
+    height: 26px;
+    width: 17px;
+    background-size: contain;
+    background-color: #041310;
+    background-repeat: no-repeat;
+    border: 2px solid #33b397;
+    border-radius: 3px;
+}
+
+.charsheet button.force-feat-button:hover {
+    border: 2px solid #cbcbcb;
+}
+
+.charsheet button.force-feat-button:focus {
+    border: 2px solid #caae22;
+}
+
+.charsheet div.sheet-top-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    overflow: auto;
+    padding-top: 17px;
+    padding-left: 63px;
+    width: 765px;
+}
+
+.charsheet div.sheet-tab-name {
+    border: 1px solid #1d7763;
+    background-color: #0f4035;
+    border-radius: 3px;
+    width: 350px;
+    height: 22px;
+    padding-top: 8px;
+    justify-content: center;
+    text-align: center;
+    color: #cbcbcb;
+    font-weight: bold;
+}
+
+.charsheet button.sheet-top-tab-button {
+    border: 1px solid #1d7763;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #2fb79b;
+    width: 30px;
+    height: 40px;
+}
+
+.charsheet button.sheet-combat-tab {
+    background-image: url("https://i.imgur.com/wi3nDe8.png");
+    background-color: black;
+}
+
+/*.charsheet .sheet-sectiontabs[value="combat-tab"]~button.sheet-combat-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-main-info-tab {
+    background-image: url("https://i.imgur.com/7PwSLbP.png");
+}
+
+/*.charsheet .sheet-sectiontabs[value="main-info-tab"]~button.main-info-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-equipment-tab {
+    background-image: url("https://i.imgur.com/EfwdSX4.png");
+}
+
+/*.charsheet .sheet-sectiontabs[value="equipment-tab"]~button.sheet-equipment-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-skill-tab {
+    background-image: url("https://i.imgur.com/VivAAZj.png");
+}
+
+/*.charsheet .sheet-sectiontabs[value="skill-tab"]~button.sheet-skill-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-feat-tab {
+    background-image: url("https://i.imgur.com/S2nem4g.png");
+    background-color: black;
+}
+
+/*.charsheet .sheet-sectiontabs[value="feat-tab"]~button.sheet-feat-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-power-tab {
+    background-image: url("https://i.imgur.com/nkezGJt.png");
+    background-color: black;
+}
+
+/*.charsheet .sheet-sectiontabs[value="power-tab"]~button.sheet-power-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-inventory-tab {
+    background-image: url("https://i.imgur.com/9U0Zc6x.png");
+}
+
+/*.charsheet .sheet-sectiontabs[value="inventory-tab"]~button.sheet-inventory-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet button.sheet-journal-tab {
+    background-image: url("https://i.imgur.com/1F7K2Zk.png");
+}
+
+/*.charsheet .sheet-sectiontabs[value="journal-tab"]~button.sheet-journal-tab {
+    background-color: #cbcbcb;
+}*/
+
+.charsheet div.sheet-combat-section,
+.charsheet div.sheet-char-info-section-top,
+.charsheet div.sheet-char-info-section-bottom,
+.charsheet div.sheet-stats-section,
+.charsheet div.sheet-equipment-section,
+.charsheet div.sheet-skill-section,
+.charsheet div.sheet-feat-section,
+.charsheet div.sheet-power-section {
+    display: none;
+}
+
+.charsheet div.sheet-combat-section {
+    padding-left: 63px;
+}
+
+.charsheet .sheet-sectiontabs[value="combat-tab"] ~ div.sheet-combat-section {
+    display: grid;
+    grid-template-columns: 330px 210px 195px;
+    grid-template-rows: 70px 90px 50px 110px;
+    grid-template-areas:    "de-buffs   incdamage   health"
+                            "de-buffs   incdamage   force "
+                            "de-buffs   attacks     equip "
+                            "effects    quickdesc   equip ";
+    grid-gap: 8px 10px;
+    padding-left: 69px;
+    padding-top: 5px;
+}
+
+.charsheet div.sheet-combat-de-buffs {
+    grid-area: de-buffs;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-active-effects {
+    grid-area: effects;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-incoming-damage {
+    grid-area: incdamage;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-health {
+    grid-area: health;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-force {
+    grid-area: force;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-attacks {
+    grid-area: attacks;
+    border: none;
+}
+
+.charsheet div.sheet-combat-change-equip {
+    grid-area: equip;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-combat-attack-quick-desc {
+    grid-area: quickdesc;
+    border-radius: 10px;
+}
+
+.charsheet div.comb-att-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding-left: 13px;
+    padding-top: 6px;
+    padding-right: 10px;
+    scrollbar-color: #33b397 black;
+    scrollbar-width: thin;
+}
+.charsheet div.comb-att-flex>div {
+    margin: 2px;
+    flex-basis: 20%;
+}
+
+/*.charsheet div.sheet-melcrit,*/
+.charsheet div.sheet-melimpcrit,
+.charsheet div.sheet-melmascrit,
+/*.charsheet div.sheet-flur,*/
+.charsheet div.sheet-impflur,
+.charsheet div.sheet-masflur,
+/*.charsheet div.sheet-melpow,*/
+.charsheet div.sheet-melimppow,
+.charsheet div.sheet-melmaspow,
+.charsheet div.sheet-rancrit,
+.charsheet div.sheet-ranimpcrit,
+.charsheet div.sheet-ranmascrit,
+.charsheet div.sheet-rapsh,
+.charsheet div.sheet-imprapsh,
+.charsheet div.sheet-masrapsh,
+.charsheet div.sheet-ranpow,
+.charsheet div.sheet-ranimppow,
+.charsheet div.sheet-ranmaspow {
+    display: none;
+}
+
+
+.charsheet button.stat-button-decrease {
+    height: 20px;
+    width: 8px;
+    background-image: url("https://i.imgur.com/8wkM6Iy.png");
+    background-size: 15px 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+}
+
+.charsheet button.stat-button-increase {
+    height: 20px;
+    width: 8px;
+    background-image: url("https://i.imgur.com/TTMQ5A9.png");
+    background-size: 15px 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+}
+
+/*endregion*/
+/*region Armor Grid*/
+.charsheet .sheet-sectiontabs[value="equipment-tab"] ~ div.sheet-equipment-section {
+    display: grid;
+    grid-template-columns: 430px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 70px;
+    grid-template-areas:    "armor-stats    implant         head         gloves      "
+                            "armor-stats    left-wrist      body         right-wrist "
+                            "armor-stats    init-block      belt         ac-block    "
+                            "armor-stats    left-weap1      armor-blank  right-weap1 "
+                            "armor-stats    left-weap2      armor-blank  right-weap2 ";
+    grid-gap: 8px 34px;
+    padding-left: 70px;
+    padding-top: 5px;
+}
+
+.charsheet div.sheet-implant {
+    grid-area: implant;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-head {
+    grid-area: head;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-gloves {
+    grid-area: gloves;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-left-wrist {
+    grid-area: left-wrist;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-body {
+    grid-area: body;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-right-wrist {
+    grid-area: right-wrist;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-init-block {
+    grid-area: init-block;
+}
+
+.charsheet div.sheet-belt {
+    grid-area: belt;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-ac-block {
+    grid-area: ac-block;
+}
+
+.charsheet div.sheet-left-weap1 {
+    grid-area: left-weap1;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-right-weap1 {
+    grid-area: right-weap1;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-left-weap2 {
+    grid-area: left-weap2;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-right-weap2 {
+    grid-area: right-weap2;
+    border-radius: 10px;
+}
+
+.charsheet div.sheet-armor-blank {
+    grid-area: armor-blank;
+}
+
+.charsheet div.sheet-armor-stats {
+    grid-area: armor-stats;
+    background-color: #0f4035;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.charsheet div.sheet-skill-top {
+    grid-area: skill-top;
+    border-radius: 10px;
+    background-color: #0f4035;
+}
+
+.charsheet button.sheet-implant-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/pEus0ZV.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-head-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/t1Mt8Ds.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-gloves-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/8Nj2yK9.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-left-wrist-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/eljZ3wY.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-body-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/YpWeBWf.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-right-wrist-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/fWviOIS.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-belt-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/DQq6e3M.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-left-weap1-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/dJM1iY8.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-right-weap1-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/l5ddjiV.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-left-weap2-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/dJM1iY8.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet button.sheet-right-weap2-button {
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.imgur.com/l5ddjiV.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+
+.charsheet div.sheet-implant-info,
+.charsheet div.sheet-head-info,
+.charsheet div.sheet-gloves-info,
+.charsheet div.sheet-left-wrist-info,
+.charsheet div.sheet-body-info,
+.charsheet div.sheet-right-wrist-info,
+.charsheet div.sheet-belt-info,
+.charsheet div.sheet-left-weap1-info,
+.charsheet div.sheet-right-weap1-info,
+.charsheet div.sheet-left-weap2-info,
+.charsheet div.sheet-right-weap2-info {
+    display: none;
+}
+
+.charsheet .sheet-armortoggle[value="implant"]~div.sheet-implant-info,
+.charsheet .sheet-armortoggle[value="head"]~div.sheet-head-info,
+.charsheet .sheet-armortoggle[value="gloves"]~div.sheet-gloves-info,
+.charsheet .sheet-armortoggle[value="left-wrist"]~div.sheet-left-wrist-info,
+.charsheet .sheet-armortoggle[value="body"]~div.sheet-body-info,
+.charsheet .sheet-armortoggle[value="right-wrist"]~div.sheet-right-wrist-info,
+.charsheet .sheet-armortoggle[value="belt"]~div.sheet-belt-info,
+.charsheet .sheet-armortoggle[value="left-weap1"]~div.sheet-left-weap1-info,
+.charsheet .sheet-armortoggle[value="right-weap1"]~div.sheet-right-weap1-info,
+.charsheet .sheet-armortoggle[value="left-weap2"]~div.sheet-left-weap2-info,
+.charsheet .sheet-armortoggle[value="right-weap2"]~div.sheet-right-weap2-info {
+    display: block;
+}
+
+
+/*endregion*/
+/*region Skills Grid*/
+.charsheet .sheet-sectiontabs[value="skill-tab"] ~ div.sheet-skill-section {
+    display: grid;
+    grid-template-columns: 352px 388px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-areas:    "comp-use       sk-label          "
+                            "demol          skill-info        "
+                            "stealth        skill-info        "
+                            "aware          skill-info        "
+                            "persu          skill-info        "
+                            "repair         skill-info        "
+                            "secur          skill-info        "
+                            "tr-inj         skill-info        ";
+    grid-gap: 1px 21px;
+    padding-left: 63px;
+    padding-top: 5px;
+}
+
+.charsheet div.sheet-comp-use {
+    grid-area: comp-use;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-demol {
+    grid-area: demol;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-stealth {
+    grid-area: stealth;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-aware {
+    grid-area: aware;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-persu {
+    grid-area: persu;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-repair {
+    grid-area: repair;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-secur {
+    grid-area: secur;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-tr-inj {
+    grid-area: tr-inj;
+    border-radius: 10px;
+    background-color: #041310;
+}
+
+.charsheet div.sheet-sk-label {
+    grid-area: sk-label;
+    border-radius: 10px;
+    background-color: #0f4035;
+}
+
+.charsheet div.sheet-skill-info {
+    grid-area: skill-info;
+    background-color: #0f4035;
+}
+
+.charsheet div.sheet-comp-use:hover,
+.charsheet div.sheet-demol:hover,
+.charsheet div.sheet-stealth:hover,
+.charsheet div.sheet-aware:hover,
+.charsheet div.sheet-persu:hover,
+.charsheet div.sheet-repair:hover,
+.charsheet div.sheet-secur:hover,
+.charsheet div.sheet-tr-inj:hover {
+    border: 2px solid #cbcbcb;
+}
+
+/*endregion*/
+/*region Feats Grid*/
+.charsheet .sheet-sectiontabs[value="feat-tab"] ~ div.sheet-feat-section {
+    display: grid;
+    grid-template-columns: 387px 358px;
+    grid-template-rows: 43px 260px 40px;
+    grid-template-areas:    "feat      feat-name          "
+                            "feat      feat-info          "
+                            "feat      feat-buttons       ";
+    grid-gap: 5px 15px;
+    padding-left: 63px;
+    padding-top: 5px;
+}
+
+.charsheet div.sheet-feat-top {
+    grid-area: feat-top;
+    border-radius: 10px;
+    background-color: #0f4035;
+}
+
+.charsheet div.feat-flex {
+    grid-area: feat;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    background-color: #0f4035;
+    overflow: auto;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-right: 10px;
+    border-radius: 10px;
+    scrollbar-color: #33b397 black;
+    scrollbar-width: thin;
+}
+
+.charsheet div.sheet-feat-name {
+    grid-area: feat-name;
+    border-radius: 10px;
+    background-color: #0f4035;
+    justify-content: center;
+}
+
+.charsheet div.sheet-feat-info {
+    grid-area: feat-info;
+    background-color: #0f4035;
+    scrollbar-color: #33b397 black;
+    scrollbar-width: thin;
+}
+
+.charsheet div.feat-flex>div {
+    margin: 2px;
+    flex-basis: 25.333333%;
+}
+
+.charsheet div.sheet-force-feat-share-area {
+    width: 353px;
+    height: 25px;
+    border-radius: 20px;
+    padding-top: 8px;
+    border: 3px solid #1d7763;
+    background-color: #0f4035;
+    color: #cbcbcb;
+}
+
+.charsheet div.sheet-feat {
+    grid-area: feat-buttons;
+}
+
+.charsheet div.sheet-force-feat-share-area:hover {
+    border: 3px solid #cbcbcb;
+}
+
+.charsheet div.sheet-force-feat-share-area:active {
+    border: 3px solid #343434;
+    background-color: black;
+}
+
+
+.charsheet button.twoWeaponFighting,
+.charsheet button.impTwoWeaponFighting,
+.charsheet button.masTwoWeaponFighting,
+.charsheet button.apLight,
+.charsheet button.apMedium,
+.charsheet button.apHeavy,
+.charsheet button.ftCaution,
+.charsheet button.impCaution,
+.charsheet button.masCaution,
+.charsheet button.critStrike,
+.charsheet button.impCritStrike,
+.charsheet button.masCritStrike,
+.charsheet button.ftEmpathy,
+.charsheet button.impEmpathy,
+.charsheet button.masEmpathy,
+.charsheet button.ftFlurry,
+.charsheet button.impFlurry,
+.charsheet button.masFlurry,
+.charsheet button.gearHead,
+.charsheet button.impGearHead,
+.charsheet button.masGearHead,
+.charsheet button.ftConditioning,
+.charsheet button.impConditioning,
+.charsheet button.masConditioning,
+.charsheet button.powerAttack,
+.charsheet button.impPowerAttack,
+.charsheet button.masPowerAttack,
+.charsheet button.powerBlast,
+.charsheet button.impPowerBlast,
+.charsheet button.masPowerBlast,
+.charsheet button.rapidShot,
+.charsheet button.impRapidShot,
+.charsheet button.masRapidShot,
+.charsheet button.sniperShot,
+.charsheet button.impSniperShot,
+.charsheet button.masSniperShot,
+.charsheet button.blasterUse,
+.charsheet button.blasterProf,
+.charsheet button.blasterFocus,
+.charsheet button.rifleUse,
+.charsheet button.rifleProf,
+.charsheet button.rifleFocus,
+.charsheet button.lightsaberUse,
+.charsheet button.lightsaberProf,
+.charsheet button.lightsaberFocus,
+.charsheet button.meleeUse,
+.charsheet button.meleeProf,
+.charsheet button.meleeFocus,
+.charsheet button.jediDefense,
+.charsheet button.impJediDefense,
+.charsheet button.masJediDefense,
+.charsheet button.ftToughness,
+.charsheet button.impToughness,
+.charsheet button.masToughness,
+.charsheet button.forceFocus,
+.charsheet button.impForceFocus,
+.charsheet button.masForceFocus,
+.charsheet button.ftDueling,
+.charsheet button.impDueling,
+.charsheet button.masDueling,
+.charsheet button.closeCombat,
+.charsheet button.impCloseCombat,
+.charsheet button.crossComputerUse,
+.charsheet button.crossDemolitions,
+.charsheet button.crossStealth,
+.charsheet button.crossRepair,
+.charsheet button.crossSecurity,
+.charsheet button.crossTreatInjury,
+.charsheet button.dualStrike,
+.charsheet button.impDualStrike,
+.charsheet button.masDualStrike,
+.charsheet button.finesseMelee,
+.charsheet button.finesseLightsabers,
+.charsheet button.preciseShot1,
+.charsheet button.preciseShot2,
+.charsheet button.preciseShot3,
+.charsheet button.preciseShot4,
+.charsheet button.preciseShot5 {
+    border: 2px solid #33b397;
+}
+
+.charsheet .sheet-featSelection[value="twoWeaponFighting"]~button.twoWeaponFighting,
+.charsheet .sheet-featSelection[value="impTwoWeaponFighting"]~button.impTwoWeaponFighting,
+.charsheet .sheet-featSelection[value="masTwoWeaponFighting"]~button.masTwoWeaponFighting,
+.charsheet .sheet-featSelection[value="apLight"]~button.apLight,
+.charsheet .sheet-featSelection[value="apMedium"]~button.apMedium,
+.charsheet .sheet-featSelection[value="apHeavy"]~button.apHeavy,
+.charsheet .sheet-featSelection[value="ftCaution"]~button.ftCaution,
+.charsheet .sheet-featSelection[value="impCaution"]~button.impCaution,
+.charsheet .sheet-featSelection[value="masCaution"]~button.masCaution,
+.charsheet .sheet-featSelection[value="critStrike"]~button.critStrike,
+.charsheet .sheet-featSelection[value="impCritStrike"]~button.impCritStrike,
+.charsheet .sheet-featSelection[value="masCritStrike"]~button.masCritStrike,
+.charsheet .sheet-featSelection[value="ftEmpathy"]~button.ftEmpathy,
+.charsheet .sheet-featSelection[value="impEmpathy"]~button.impEmpathy,
+.charsheet .sheet-featSelection[value="masEmpathy"]~button.masEmpathy,
+.charsheet .sheet-featSelection[value="ftFlurry"]~button.ftFlurry,
+.charsheet .sheet-featSelection[value="impFlurry"]~button.impFlurry,
+.charsheet .sheet-featSelection[value="masFlurry"]~button.masFlurry,
+.charsheet .sheet-featSelection[value="gearHead"]~button.gearHead,
+.charsheet .sheet-featSelection[value="impGearHead"]~button.impGearHead,
+.charsheet .sheet-featSelection[value="masGearHead"]~button.masGearHead,
+.charsheet .sheet-featSelection[value="ftConditioning"]~button.ftConditioning,
+.charsheet .sheet-featSelection[value="impConditioning"]~button.impConditioning,
+.charsheet .sheet-featSelection[value="masConditioning"]~button.masConditioning,
+.charsheet .sheet-featSelection[value="powerAttack"]~button.powerAttack,
+.charsheet .sheet-featSelection[value="impPowerAttack"]~button.impPowerAttack,
+.charsheet .sheet-featSelection[value="masPowerAttack"]~button.masPowerAttack,
+.charsheet .sheet-featSelection[value="powerBlast"]~button.powerBlast,
+.charsheet .sheet-featSelection[value="impPowerBlast"]~button.impPowerBlast,
+.charsheet .sheet-featSelection[value="masPowerBlast"]~button.masPowerBlast,
+.charsheet .sheet-featSelection[value="rapidShot"]~button.rapidShot,
+.charsheet .sheet-featSelection[value="impRapidShot"]~button.impRapidShot,
+.charsheet .sheet-featSelection[value="masRapidShot"]~button.masRapidShot,
+.charsheet .sheet-featSelection[value="sniperShot"]~button.sniperShot,
+.charsheet .sheet-featSelection[value="impSniperShot"]~button.impSniperShot,
+.charsheet .sheet-featSelection[value="masSniperShot"]~button.masSniperShot,
+.charsheet .sheet-featSelection[value="blasterUse"]~button.blasterUse,
+.charsheet .sheet-featSelection[value="blasterProf"]~button.blasterProf,
+.charsheet .sheet-featSelection[value="blasterFocus"]~button.blasterFocus,
+.charsheet .sheet-featSelection[value="rifleUse"]~button.rifleUse,
+.charsheet .sheet-featSelection[value="rifleProf"]~button.rifleProf,
+.charsheet .sheet-featSelection[value="rifleFocus"]~button.rifleFocus,
+.charsheet .sheet-featSelection[value="lightsaberUse"]~button.lightsaberUse,
+.charsheet .sheet-featSelection[value="lightsaberProf"]~button.lightsaberProf,
+.charsheet .sheet-featSelection[value="lightsaberFocus"]~button.lightsaberFocus,
+.charsheet .sheet-featSelection[value="meleeUse"]~button.meleeUse,
+.charsheet .sheet-featSelection[value="meleeProf"]~button.meleeProf,
+.charsheet .sheet-featSelection[value="meleeFocus"]~button.meleeFocus,
+.charsheet .sheet-featSelection[value="jediDefense"]~button.jediDefense,
+.charsheet .sheet-featSelection[value="impJediDefense"]~button.impJediDefense,
+.charsheet .sheet-featSelection[value="masJediDefense"]~button.masJediDefense,
+.charsheet .sheet-featSelection[value="ftToughness"]~button.ftToughness,
+.charsheet .sheet-featSelection[value="impToughness"]~button.impToughness,
+.charsheet .sheet-featSelection[value="masToughness"]~button.masToughness,
+.charsheet .sheet-featSelection[value="forceFocus"]~button.forceFocus,
+.charsheet .sheet-featSelection[value="impForceFocus"]~button.impForceFocus,
+.charsheet .sheet-featSelection[value="masForceFocus"]~button.masForceFocus,
+.charsheet .sheet-featSelection[value="ftDueling"]~button.ftDueling,
+.charsheet .sheet-featSelection[value="impDueling"]~button.impDueling,
+.charsheet .sheet-featSelection[value="masDueling"]~button.masDueling,
+.charsheet .sheet-featSelection[value="closeCombat"]~button.closeCombat,
+.charsheet .sheet-featSelection[value="impCloseCombat"]~button.impCloseCombat,
+.charsheet .sheet-featSelection[value="crossComputerUse"]~button.crossComputerUse,
+.charsheet .sheet-featSelection[value="crossDemolitions"]~button.crossDemolitions,
+.charsheet .sheet-featSelection[value="crossStealth"]~button.crossStealth,
+.charsheet .sheet-featSelection[value="crossRepair"]~button.crossRepair,
+.charsheet .sheet-featSelection[value="crossSecurity"]~button.crossSecurity,
+.charsheet .sheet-featSelection[value="crossTreatInjury"]~button.crossTreatInjury,
+.charsheet .sheet-featSelection[value="dualStrike"]~button.dualStrike,
+.charsheet .sheet-featSelection[value="impDualStrike"]~button.impDualStrike,
+.charsheet .sheet-featSelection[value="masDualStrike"]~button.masDualStrike,
+.charsheet .sheet-featSelection[value="finesseMelee"]~button.finesseMelee,
+.charsheet .sheet-featSelection[value="finesseLightsabers"]~button.finesseLightsabers,
+.charsheet .sheet-featSelection[value="preciseShot1"]~button.preciseShot1,
+.charsheet .sheet-featSelection[value="preciseShot2"]~button.preciseShot2,
+.charsheet .sheet-featSelection[value="preciseShot3"]~button.preciseShot3,
+.charsheet .sheet-featSelection[value="preciseShot4"]~button.preciseShot4,
+.charsheet .sheet-featSelection[value="preciseShot5"]~button.preciseShot5 {
+    border: 2px solid #ff0000;
+    display: none;
+}
+
+/*region Feat Buttons*/
+.charsheet button.twoWeaponFighting {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/49/KotORII_Feat_Two-Weapon_Fighting.png");
+}
+
+.charsheet button.impTwoWeaponFighting {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/18/KotORII_Feat_Improved_Two-Weapon_Fighting.png");
+}
+
+.charsheet button.masTwoWeaponFighting {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/14/KotORII_Feat_Master_Two-Weapon_Fighting.png");
+}
+
+.charsheet button.apLight {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/75/KotORII_Feat_Armor_Proficiency_Light.png");
+}
+
+.charsheet button.apMedium {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/06/KotORII_Feat_Armor_Proficiency_Medium.png");
+}
+
+.charsheet button.apHeavy {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/f7/KotORII_Feat_Armor_Proficiency_Heavy.png");
+}
+
+.charsheet button.ftCaution {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/52/KotORII_Feat_Caution.png");
+}
+
+.charsheet button.impCaution {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c0/KotORII_Feat_Improved_Caution.png");
+}
+
+.charsheet button.masCaution {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/80/KotORII_Feat_Master_Caution.png");
+}
+
+.charsheet button.critStrike, .charsheet button.comb-melcrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/b1/KotORII_Feat_Critical_Strike.png");
+}
+
+.charsheet button.impCritStrike, .charsheet button.comb-melimpcrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/31/KotORII_Feat_Improved_Critical_Strike.png");
+}
+
+.charsheet button.masCritStrike, .charsheet button.comb-melmascrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/e/e2/KotORII_Feat_Master_Critical_Strike.png");
+}
+
+.charsheet button.ftEmpathy {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/60/KotORII_Feat_Empathy.png");
+}
+
+.charsheet button.impEmpathy {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c3/KotORII_Feat_Improved_Empathy.png");
+}
+
+.charsheet button.masEmpathy {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/4c/KotORII_Feat_Master_Empathy.png");
+}
+
+.charsheet button.ftFlurry, .charsheet button.comb-flur {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/a/a2/KotORII_Feat_Flurry.png");
+}
+
+.charsheet button.impFlurry, .charsheet button.comb-impflur {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/91/KotORII_Feat_Improved_Flurry.png");
+}
+
+.charsheet button.masFlurry, .charsheet button.comb-masflur {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/24/KotORII_Feat_Master_Flurry.png");
+}
+
+.charsheet button.gearHead {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5e/KotORII_Feat_Gear_Head.png");
+}
+
+.charsheet button.impGearHead {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3e/KotORII_Feat_Improved_Gear_Head.png");
+}
+
+.charsheet button.masGearHead {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/db/KotORII_Feat_Master_Gear_Head.png");
+}
+
+.charsheet button.ftConditioning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/31/KotORII_Feat_Conditioning.png");
+}
+
+.charsheet button.impConditioning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/d5/KotORII_Feat_Improved_Conditioning.png");
+}
+
+.charsheet button.masConditioning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/2c/KotORII_Feat_Master_Conditioning.png");
+}
+
+.charsheet button.powerAttack, .charsheet button.comb-melpow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/1b/KotORII_Feat_Power_Attack.png");
+}
+
+.charsheet button.impPowerAttack, .charsheet button.comb-melimppow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/80/KotORII_Feat_Improved_Power_Attack.png");
+}
+
+.charsheet button.masPowerAttack, .charsheet button.comb-melmaspow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/67/KotORII_Feat_Master_Power_Attack.png");
+}
+
+.charsheet button.powerBlast, .charsheet button.comb-ranpow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/9f/KotORII_Feat_Power_Blast.png");
+}
+
+.charsheet button.impPowerBlast, .charsheet button.comb-ranimppow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/e/eb/KotORII_Feat_Improved_Power_Blast.png");
+}
+
+.charsheet button.masPowerBlast, .charsheet button.comb-ranmaspow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/38/KotORII_Feat_Master_Power_Blast.png");
+}
+
+.charsheet button.rapidShot, .charsheet button.comb-rapsh {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/ba/KotORII_Feat_Rapid_Shot.png");
+}
+
+.charsheet button.impRapidShot, .charsheet button.comb-imprapsh {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/6b/KotORII_Feat_Improved_Rapid_Shot.png");
+}
+
+.charsheet button.masRapidShot, .charsheet button.comb-masrapsh {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/16/KotORII_Feat_Master_Rapid_Shot.png");
+}
+
+.charsheet button.sniperShot, .charsheet button.comb-rancrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/f7/KotORII_Feat_Sniper_Shot.png");
+}
+
+.charsheet button.impSniperShot, .charsheet button.comb-ranimpcrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/ff/KotORII_Feat_Improved_Sniper_Shot.png");
+}
+
+.charsheet button.masSniperShot, .charsheet button.comb-ranmascrit {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/04/KotORII_Feat_Master_Sniper_Shot.png");
+}
+
+.charsheet button.blasterUse {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/71/KotORII_Feat_Weapon_Focus_Blaster_Pistol.png");
+}
+
+.charsheet button.blasterProf {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/64/KotORII_Feat_Weapon_Proficiency_Blaster_Pistol.png");
+}
+
+.charsheet button.blasterFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/71/KotORII_Feat_Weapon_Focus_Blaster_Pistol.png");
+}
+
+.charsheet button.rifleUse {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/00/KotORII_Feat_Weapon_Focus_Blaster_Rifle.png");
+}
+
+.charsheet button.rifleProf {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3f/KotORII_Feat_Weapon_Proficiency_Blaster_Rifle.png");
+}
+
+.charsheet button.rifleFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/00/KotORII_Feat_Weapon_Focus_Blaster_Rifle.png");
+}
+
+.charsheet button.lightsaberUse {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/38/KotORII_Feat_Weapon_Focus_Lightsaber.png");
+}
+
+.charsheet button.lightsaberProf {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/88/KotORII_Feat_Weapon_Proficiency_Lightsaber.png");
+}
+
+.charsheet button.lightsaberFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/38/KotORII_Feat_Weapon_Focus_Lightsaber.png");
+}
+
+.charsheet button.meleeUse {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/45/KotORII_Feat_Weapon_Focus_Melee_Weapons.png");
+}
+
+.charsheet button.meleeProf {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/b7/KotORII_Feat_Weapon_Proficiency_Melee_Weapons.png");
+}
+
+.charsheet button.meleeFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/45/KotORII_Feat_Weapon_Focus_Melee_Weapons.png");
+}
+
+.charsheet button.jediDefense {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/bb/KotORII_Feat_Jedi_Defense.png");
+}
+
+.charsheet button.impJediDefense {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/04/KotORII_Feat_Advanced_Jedi_Defense.png");
+}
+
+.charsheet button.masJediDefense {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/ca/KotORII_Feat_Master_Jedi_Defense.png");
+}
+
+.charsheet button.ftToughness {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5f/KotORII_Feat_Toughness.png");
+}
+
+.charsheet button.impToughness {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/80/KotORII_Feat_Improved_Toughness.png");
+}
+
+.charsheet button.masToughness {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/32/KotORII_Feat_Master_Toughness.png");
+}
+
+.charsheet button.forceFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/57/KotORII_Feat_Force_Focus.png");
+}
+
+.charsheet button.impForceFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3a/KotORII_Feat_Improved_Force_Focus.png");
+}
+
+.charsheet button.masForceFocus {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3f/KotORII_Feat_Master_Force_Focus.png");
+}
+
+.charsheet button.ftDueling {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/05/KotORII_Feat_Dueling.png");
+}
+
+.charsheet button.impDueling {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/76/KotORII_Feat_Improved_Dueling.png");
+}
+
+.charsheet button.masDueling {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/6b/KotORII_Feat_Master_Dueling.png");
+}
+
+.charsheet button.closeCombat {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/7d/KotORII_Feat_Close_Combat.png");
+}
+
+.charsheet button.impCloseCombat {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/32/KotORII_Feat_Improved_Close_Combat.png");
+}
+
+.charsheet button.forceRegen {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/35/KotORII_Feat_Regenerate_Force_Points.png");
+}
+
+.charsheet button.crossComputerUse {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/ba/KotORII_Feat_Class_Skill_Computer_Use.png");
+}
+
+.charsheet button.crossDemolitions {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/a/a3/KotORII_Feat_Class_Skill_Demolitions.png");
+}
+
+.charsheet button.crossStealth {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/35/KotORII_Feat_Class_Skill_Stealth.png");
+}
+
+.charsheet button.crossRepair {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3f/KotORII_Feat_Class_Skill_Repair.png");
+}
+
+.charsheet button.crossSecurity {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/a/a5/KotORII_Feat_Class_Skill_Security.png");
+}
+
+.charsheet button.crossTreat-Injury {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5c/KotORII_Feat_Class_Skill_Treat_Injury.png");
+}
+
+.charsheet button.dualStrike {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/94/KotORII_Feat_Dual_Strike.png");
+}
+
+.charsheet button.impDualStrike {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/20/KotORII_Feat_Improved_Dual_Strike.png");
+}
+
+.charsheet button.masDualStrike {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/0b/KotORII_Feat_Master_Dual_Strike.png");
+}
+
+.charsheet button.finesseLightsabers {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/22/KotORII_Feat_Finesse_Lightsabers.png");
+}
+
+.charsheet button.finesseMelee {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/68/KotORII_Feat_Finesse_Melee_Weapons.png");
+}
+
+.charsheet button.regenHealth {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/95/KotORII_Feat_Regenerate_Vitality_Points.png");
+}
+
+.charsheet button.stealthRun {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/a/a4/KotORII_Feat_Stealth_Run.png");
+}
+
+.charsheet button.preciseShot1 {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/e/e3/KotORII_Feat_Precise_Shot_I.png");
+}
+
+.charsheet button.preciseShot2 {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/dc/KotORII_Feat_Precise_Shot_II.png");
+}
+
+.charsheet button.preciseShot3 {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/9c/KotORII_Feat_Precise_Shot_III.png");
+}
+
+.charsheet button.preciseShot4 {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/90/KotORII_Feat_Precise_Shot_IV.png");
+}
+
+.charsheet button.preciseShot5 {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/24/KotORII_Feat_Precise_Shot_V.png");
+}
+
+.charsheet button.comb-basic {
+    background-image: url("https://i.imgur.com/yX2YeH8.png");
+}
+
+/*endregion*/
+/*endregion*/
+/*region Force Grid*/
+.charsheet .sheet-sectiontabs[value="power-tab"] ~ div.sheet-power-section {
+    display: grid;
+    grid-template-columns: 387px 358px;
+    grid-template-rows: 43px 260px 40px;
+    grid-template-areas:    "force          force-name          "
+                            "force          force-info          "
+                            "force          force-buttons       ";
+    grid-gap: 5px 15px;
+    padding-left: 63px;
+    padding-top: 5px;
+}
+
+.charsheet div.sheet-force-top {
+    grid-area: force-top;
+    border-radius: 10px;
+    background-color: #0f4035;
+}
+
+.charsheet div.force-flex {
+    grid-area: force;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    background-color: #0f4035;
+    overflow: auto;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-right: 10px;
+    border-radius: 10px;
+    scrollbar-color: #33b397 black;
+    scrollbar-width: thin;
+}
+
+.charsheet div.sheet-force-name {
+    grid-area: force-name;
+    border-radius: 10px;
+    background-color: #0f4035;
+    justify-content: center;
+}
+
+.charsheet div.sheet-force-info {
+    grid-area: force-info;
+    background-color: #0f4035;
+    scrollbar-color: #33b397 black;
+    scrollbar-width: thin;
+}
+
+.charsheet div.force-flex>div {
+    margin: 2px;
+    flex-basis: 25.333333%;
+}
+
+.charsheet div.sheet-force {
+    grid-area: force-buttons;
+}
+/*region Feat Buttons*/
+.charsheet button.fpHeal {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/d9/KotORII_Power_Heal.png");
+}
+
+.charsheet button.impHeal {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5d/KotORII_Power_Improved_Heal.png");
+}
+
+.charsheet button.masHeal {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/f5/KotORII_Power_Master_Heal.png");
+}
+
+.charsheet button.forceAura {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/b4/KotORII_Power_Force_Aura.png");
+}
+
+.charsheet button.forceShield {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/34/KotORII_Power_Force_Shield.png");
+}
+
+.charsheet button.forceArmor {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/db/KotORII_Power_Force_Armor.png");
+}
+
+.charsheet button.forceSpeed {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/18/KotORII_Power_Burst_of_Speed.png");
+}
+
+.charsheet button.impForceSpeed {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/4f/KotORII_Power_Knight_Speed.png");
+}
+
+.charsheet button.masForceSpeed {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/32/KotORII_Power_Master_Speed.png");
+}
+
+.charsheet button.forceValor {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/thumb/1/1a/KotORII_Power_Force_Valor.png/16px-KotORII_Power_Force_Valor.png");
+}
+
+.charsheet button.impForceValor {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/thumb/9/9a/KotORII_Power_Knight_Valor.png/16px-KotORII_Power_Knight_Valor.png");
+}
+
+.charsheet button.masForceValor {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/thumb/5/50/KotORII_Power_Master_Valor.png/16px-KotORII_Power_Master_Valor.png");
+}
+
+.charsheet button.forceResistance {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/08/KotORII_Power_Force_Resistance.png");
+}
+
+.charsheet button.forceImmunity {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/1d/KotORII_Power_Force_Immunity.png");
+}
+
+.charsheet button.energyResistance {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/2f/KotORII_Power_Energy_Resistance.png");
+}
+
+.charsheet button.impResistance {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/21/KotORII_Power_Improved_Energy_Resistance.png");
+}
+
+.charsheet button.masResistance {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/2f/KotORII_Power_Master_Energy_Resistance.png");
+}
+
+.charsheet button.forceBarrier {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/91/KotORII_Power_Force_Barrier.png");
+}
+
+.charsheet button.impForceBarrier {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/1c/KotORII_Power_Improved_Force_Barrier.png");
+}
+
+.charsheet button.masForceBarrier {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/20/KotORII_Power_Master_Force_Barrier.png");
+}
+
+.charsheet button.battleMeditation {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/4a/KotORII_Power_Battle_Meditation.png");
+}
+
+.charsheet button.impBattleMeditation {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/f7/KotORII_Power_Improved_Battle_Meditation.png");
+}
+
+.charsheet button.masBattleMeditation {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/82/KotORII_Power_Master_Battle_Meditation.png");
+}
+
+.charsheet button.forceBody {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/99/KotORII_Power_Force_Body.png");
+}
+
+.charsheet button.impForceBody {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/9c/KotORII_Power_Improved_Force_Body.png");
+}
+
+.charsheet button.masForceBody {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/ca/KotORII_Power_Master_Force_Body.png");
+}
+
+.charsheet button.fpRevitalize {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5e/KotORII_Power_Revitalize.png");
+}
+
+.charsheet button.impRevitalize {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/fa/KotORII_Power_Improved_Revitalize.png");
+}
+
+.charsheet button.masRevitalize {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/52/KotORII_Power_Master_Revitalize.png");
+}
+
+.charsheet button.affectMind {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/f8/KotORII_Power_Affect_Mind.png");
+}
+
+.charsheet button.dominateMind {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/be/KotORII_Power_Dominate_Mind.png");
+}
+
+.charsheet button.forceDeflect {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/9/98/KotORII_Power_Force_Deflection.png");
+}
+
+.charsheet button.forceReflect {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/16/KotORII_Power_Force_Redirection.png");
+}
+
+.charsheet button.fpStun {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/0/0a/KotORII_Power_Stun.png");
+}
+
+.charsheet button.impStun {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/85/KotORII_Power_Stasis.png");
+}
+
+.charsheet button.masStun {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/ca/KotORII_Power_Stasis_Field.png");
+}
+
+.charsheet button.fpStunDroid {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/78/KotORII_Power_Stun_Droid.png");
+}
+
+.charsheet button.impStunDroid {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/66/KotORII_Power_Disable_Droid.png");
+}
+
+.charsheet button.masStunDroid {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c5/KotORII_Power_Destroy_Droid.png");
+}
+
+.charsheet button.fpChoke {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/41/KotORII_Power_Wound.png");
+}
+
+.charsheet button.impChoke {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/43/KotORII_Power_Choke.png");
+}
+
+.charsheet button.masChoke {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/bd/KotORII_Power_Kill.png");
+}
+
+.charsheet button.fpSlow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/69/KotORII_Power_Slow.png");
+}
+
+.charsheet button.impSlow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/f/fd/KotORII_Power_Affliction.png");
+}
+
+.charsheet button.masSlow {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/37/KotORII_Power_Plague.png");
+}
+
+.charsheet button.fpFear {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/16/KotORII_Power_Fear.png");
+}
+
+.charsheet button.impFear {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/6c/KotORII_Power_Horror.png");
+}
+
+.charsheet button.masFear {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/1/14/KotORII_Power_Insanity.png");
+}
+
+.charsheet button.fpLightning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/7c/KotORII_Power_Shock.png");
+}
+
+.charsheet button.impLightning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c4/KotORII_Power_Force_Lightning.png");
+}
+
+.charsheet button.masLightning {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/2f/KotORII_Power_Force_Storm.png");
+}
+
+.charsheet button.forcePush {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/86/KotORII_Power_Force_Push.png");
+}
+
+.charsheet button.impForcePush {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/7c/KotORII_Power_Force_Whirlwind.png");
+}
+
+.charsheet button.masForcePush {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/8e/KotORII_Power_Force_Wave.png");
+}
+
+.charsheet button.drainLife {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/d4/KotORII_Power_Drain_Life.png");
+}
+
+.charsheet button.deathField {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/d/d9/KotORII_Power_Death_Field.png");
+}
+
+.charsheet button.forceSuppression {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3f/KotORII_Power_Force_Suppression.png");
+}
+
+.charsheet button.forceBreach {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/23/KotORII_Power_Force_Breach.png");
+}
+
+.charsheet button.throwLightsaber {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c8/KotORII_Power_Throw_Lightsaber.png");
+}
+
+.charsheet button.impThrowLightsaber {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/76/KotORII_Power_Advanced_Throw_Lightsaber.png");
+}
+
+.charsheet button.drainForce {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/c/c2/KotORII_Power_Drain_Force.png");
+}
+
+.charsheet button.impDrainForce {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/4/49/KotORII_Power_Improved_Drain_Force.png");
+}
+
+.charsheet button.masDrainForce {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/6/6c/KotORII_Power_Master_Drain_Force.png");
+}
+
+.charsheet button.forceScream {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/2/25/KotORII_Power_Force_Scream.png");
+}
+
+.charsheet button.impForceScream {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/7/70/KotORII_Power_Improved_Force_Scream.png");
+}
+
+.charsheet button.masForceScream {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/3/3f/KotORII_Power_Master_Force_Scream.png");
+}
+
+.charsheet button.mindTrick {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/5/5b/KotORII_Power_Mind_Trick.png");
+}
+
+.charsheet button.impMindTrick {
+    background-image: url("https://cdn.wikimg.net/en/strategywiki/images/b/b7/KotORII_Power_Force_Confusion.png");
+}
+
+/*endregion*/
+/*endregion*/
+
+.charsheet .sheet-sectiontabs[value="main-info-tab"]~div.sheet-main-info-section,
+.charsheet .sheet-sectiontabs[value="inventory-tab"]~div.sheet-inventory-section,
+.charsheet .sheet-sectiontabs[value="journal-tab"]~div.sheet-journal-section {
+    display: grid;
+}

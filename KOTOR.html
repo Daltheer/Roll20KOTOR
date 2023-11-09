@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>.</title>
+</head>
+<input type="hidden" class="sheet-sectiontabs" name="attr_sectionsel" value="implant" />
+<div class="sheet-top-flex">
+    <div class="sheet-tab-name"><span name="attr_sectionsel">Tab</span></div>
+    <div style="padding-left: 30px;"><button type="action" name="act_combat-tab"    class="sheet-combat-tab     sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_main-info-tab" class="sheet-main-info-tab  sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_equipment-tab" class="sheet-equipment-tab  sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_skill-tab"     class="sheet-skill-tab      sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_feat-tab"      class="sheet-feat-tab       sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_power-tab"     class="sheet-power-tab      sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_inventory-tab" class="sheet-inventory-tab  sheet-top-tab-button"></button></div>
+    <div><button type="action" name="act_journal-tab"   class="sheet-journal-tab    sheet-top-tab-button"></button></div>
+</div>
+<div style="border: 1px solid #1d7763; height: 0px; width: 765px; margin-left: 63px; margin-top: 2px; margin-bottom: 5px;"><p></p></div>
+<div class="sheet-combat-section">
+    <div class="sheet-combat-de-buffs sheet-section">
+
+    </div>
+    <div class="sheet-combat-active-effects sheet-section">
+
+    </div>
+    <div class="sheet-combat-incoming-damage sheet-section">
+        <div></div>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="margin: 2px; flex-basis: 50%;"><span name="attr_mAC"></span><label>asd</label></div>
+            <div style="margin: 2px; flex-basis: 50%;"><input type="text" value="0" style="width: 20px;"></div>
+            <div style="margin: 2px; flex-basis: 50%;"><span name="attr_rAC"></span><label>asd</label></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="sheet-combat-health sheet-section">
+
+    </div>
+    <div class="sheet-combat-force sheet-section">
+
+    </div>
+    <div class="sheet-combat-attacks sheet-section comb-att-flex">
+        <div class="sheet-basic">
+            <button type="action" name="act_basic" class="comb-basic force-feat-button"></button>
+        </div>
+        <div class="sheet-melcrit">
+            <button type="action" name="act_melcrit" class="comb-melcrit force-feat-button"></button>
+        </div>
+        <div class="sheet-melimpcrit">
+            <button type="action" name="act_melimpcrit" class="comb-melimpcrit force-feat-button"></button>
+        </div>
+        <div class="sheet-melmascrit">
+            <button type="action" name="act_melmascrit" class="comb-melmascrit force-feat-button"></button>
+        </div>
+        <div class="sheet-flur">
+            <button type="action" name="act_flur" class="comb-flur force-feat-button"></button>
+        </div>
+        <div class="sheet-impflur">
+            <button type="action" name="act_impflur" class="comb-impflur force-feat-button"></button>
+        </div>
+        <div class="sheet-masflur">
+            <button type="action" name="act_masflur" class="comb-masflur force-feat-button"></button>
+        </div>
+        <div class="sheet-melpow">
+            <button type="action" name="act_melpow" class="comb-melpow force-feat-button"></button>
+        </div>
+        <div class="sheet-melimppow">
+            <button type="action" name="act_melimppow" class="comb-melimppow force-feat-button"></button>
+        </div>
+        <div class="sheet-melmaspow">
+            <button type="action" name="act_melmaspow" class="comb-melmaspow force-feat-button"></button>
+        </div>
+        <div class="sheet-rancrit">
+            <button type="action" name="act_rancrit" class="comb-rancrit force-feat-button"></button>
+        </div>
+        <div class="sheet-ranimpcrit">
+            <button type="action" name="act_ranimpcrit" class="comb-ranimpcrit force-feat-button"></button>
+        </div>
+        <div class="sheet-ranmascrit">
+            <button type="action" name="act_ranmascrit" class="comb-ranmascrit force-feat-button"></button>
+        </div>
+        <div class="sheet-rapsh">
+            <button type="action" name="act_rapsh" class="comb-rapsh force-feat-button"></button>
+        </div>
+        <div class="sheet-imprapsh">
+            <button type="action" name="act_imprapsh" class="comb-imprapsh force-feat-button"></button>
+        </div>
+        <div class="sheet-masrapsh">
+            <button type="action" name="act_masrapsh" class="comb-masrapsh force-feat-button"></button>
+        </div>
+        <div class="sheet-ranpow">
+            <button type="action" name="act_ranpow" class="comb-ranpow force-feat-button"></button>
+        </div>
+        <div class="sheet-ranimppow">
+            <button type="action" name="act_ranimppow" class="comb-ranimppow force-feat-button"></button>
+        </div>
+        <div class="sheet-ranmaspow">
+            <button type="action" name="act_ranmaspow" class="comb-ranmaspow force-feat-button"></button>
+        </div>
+    </div>
+    <div class="sheet-combat-change-equip sheet-section">
+
+    </div>
+    <div class="sheet-combat-attack-quick-desc sheet-section">
+
+    </div>
+</div>
+<div class="sheet-main-info-tab">
+    
+</div>
+<div class="sheet-equipment-section">
+    <input type="hidden" class="sheet-armortoggle" name="attr_armorTab" value="implant" />
+    <div class="sheet-implant">
+        <button type="action" name="act_implant" class="sheet-implant-button"></button>
+    </div>
+    <div class="sheet-head">
+        <button type="action" name="act_head" class="sheet-head-button"></button>
+    </div>
+    <div class="sheet-gloves">
+        <button type="action" name="act_gloves" class="sheet-gloves-button"></button>
+    </div>
+    <div class="sheet-left-wrist">
+        <button type="action" name="act_left-wrist" class="sheet-left-wrist-button"></button>
+    </div>
+    <div class="sheet-body">
+        <button type="action" name="act_body" class="sheet-body-button"></button>
+    </div>
+    <div class="sheet-right-wrist">
+        <button type="action" name="act_right-wrist" class="sheet-right-wrist-button"></button>
+    </div>
+    <div class="sheet-init-block">
+    </div>
+    <div class="sheet-belt">
+        <button type="action" name="act_belt" class="sheet-belt-button"></button>
+    </div>
+    <div class="sheet-ac-block">
+    </div>
+    <div class="sheet-left-weap1">
+        <button type="action" name="act_left-weap1" class="sheet-left-weap1-button"></button>
+    </div>
+    <div class="sheet-right-weap1">
+        <button type="action" name="act_right-weap1" class="sheet-right-weap1-button"></button>
+    </div>
+    <div class="sheet-left-weap2">
+        <button type="action" name="act_left-weap2" class="sheet-left-weap2-button"></button>
+    </div>
+    <div class="sheet-right-weap2">
+        <button type="action" name="act_right-weap2" class="sheet-right-weap2-button"></button>
+    </div>
+    <div class="sheet-armor-blank">
+    </div>
+        <div class="sheet-implant-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Implant</label>
+            <input type="text" name="attr_imp-name">
+            <select name="attr_imp1-stat">
+                <option value="str">Strength</option>
+                <option value="dex">Dexterity</option>
+                <option value="con">Constitution</option>
+                <option value="int">Intelligence</option>
+                <option value="wis">Wisdom</option>
+                <option value="cha">Charisma</option>
+                <option value="allst">All Stats</option>
+                <option value="ref">Reflex</option>
+                <option value="fort">Fortitude</option>
+                <option value="will">Will</option>
+                <option value="allsa">All Saves</option>
+                <option value="comp">Computer Use</option>
+                <option value="demo">Demolitions</option>
+                <option value="stealth">Stealth</option>
+                <option value="aware">Awareness</option>
+                <option value="pers">Persuade</option>
+                <option value="repair">Repair</option>
+                <option value="sec">Security</option>
+                <option value="tri">Treat Injury</option>
+                <option value="allsk">All Skills</option>
+                <option value="ac">Armor</option>
+            </select>
+            <input type="number" name="attr_imp1-stat-num">
+            <select name="attr_imp2-stat">
+                <option value="str">Strength</option>
+                <option value="dex">Dexterity</option>
+                <option value="con">Constitution</option>
+                <option value="int">Intelligence</option>
+                <option value="wis">Wisdom</option>
+                <option value="cha">Charisma</option>
+                <option value="allst">All Stats</option>
+                <option value="ref">Reflex</option>
+                <option value="fort">Fortitude</option>
+                <option value="will">Will</option>
+                <option value="allsa">All Saves</option>
+                <option value="comp">Computer Use</option>
+                <option value="demo">Demolitions</option>
+                <option value="stealth">Stealth</option>
+                <option value="aware">Awareness</option>
+                <option value="pers">Persuade</option>
+                <option value="repair">Repair</option>
+                <option value="sec">Security</option>
+                <option value="tri">Treat Injury</option>
+                <option value="allsk">All Skills</option>
+                <option value="ac">Armor</option>
+            </select>
+            <input type="number" name="attr_imp2-stat-num">
+            <select name="attr_imp3-stat">
+                <option value="str">Strength</option>
+                <option value="dex">Dexterity</option>
+                <option value="con">Constitution</option>
+                <option value="int">Intelligence</option>
+                <option value="wis">Wisdom</option>
+                <option value="cha">Charisma</option>
+                <option value="allst">All Stats</option>
+                <option value="ref">Reflex</option>
+                <option value="fort">Fortitude</option>
+                <option value="will">Will</option>
+                <option value="allsa">All Saves</option>
+                <option value="comp">Computer Use</option>
+                <option value="demo">Demolitions</option>
+                <option value="stealth">Stealth</option>
+                <option value="aware">Awareness</option>
+                <option value="pers">Persuade</option>
+                <option value="repair">Repair</option>
+                <option value="sec">Security</option>
+                <option value="tri">Treat Injury</option>
+                <option value="allsk">All Skills</option>
+                <option value="ac">Armor</option>
+            </select>
+            <input type="number" name="attr_imp3-stat-num">
+            <input type="text" name="attr_imp-extra-info">
+        </div>
+        <div class="sheet-head-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Head</label>
+            <input type="text" name="attr_head-name">
+        </div>
+        <div class="sheet-gloves-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Gloves</label>
+            <input type="text" name="attr_glov-name">
+        </div>
+        <div class="sheet-left-wrist-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Left Arm</label>
+            <input type="text" name="attr_lwr-name">
+        </div>
+        <div class="sheet-body-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Body</label>
+            <input type="text" name="attr_body-name">
+        </div>
+        <div class="sheet-right-wrist-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Right Arm</label>
+            <input type="text" name="attr_rwr-name">
+        </div>
+        <div class="sheet-belt-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Belt</label>
+            <input type="text" name="attr_belt-name">
+        </div>
+        <div class="sheet-left-weap1-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Left Weapon</label>
+            <input type="text" name="attr_lwe1-name">
+        </div>
+        <div class="sheet-right-weap1-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Right Weapon</label>
+            <input type="text" name="attr_rwe1-name">
+        </div>
+        <div class="sheet-left-weap2-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Left Weapon - Alternate</label>
+            <input type="text" name="attr_lwe2-name">
+        </div>
+        <div class="sheet-right-weap2-info sheet-armor-stats sheet-section">
+            <label style="text-align: left; padding-top: 3px">Right Weapon - Alternate</label>
+            <input type="text" name="attr_rwe2-name">
+        </div>
+</div>
+<div class="sheet-skill-section">
+    <div class="sheet-comp-use sheet-section">
+        <label>
+            Computer Use
+                <button type="roll" class="roller" name="roll-str" value="/roll 1d20 + @{int-mod} + @{comp-use}"></button>
+            <input type="number" name="attr_comp-use" style="width: 60px"></label>
+    </div>
+    <div class="sheet-demol sheet-section">
+        <label>
+            Demolitions
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{int-mod} + @{demol}"></button>
+            <input type="number" name="attr_demol" style="width: 60px"></label>
+    </div>
+    <div class="sheet-stealth sheet-section">
+        <label>
+            Stealth
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{dex-mod} + @{stealth}"></button>
+            <input type="number" name="attr_stealth" style="width: 60px"></label>
+    </div>
+    <div class="sheet-aware sheet-section">
+        <label>
+            Awareness
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{wis-mod} + @{aware}"></button>
+            <input type="number" name="attr_aware" style="width: 60px"></label>
+    </div>
+    <div class="sheet-persu sheet-section">
+        <label>
+            Persuade
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{cha-mod} + @{persu}"></button>
+            <input type="number" name="attr_persu" style="width: 60px"></label>
+    </div>
+    <div class="sheet-repair sheet-section">
+        <label>
+            Repair
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{int-mod} + @{repair}"></button>
+            <input type="number" name="attr_repair" style="width: 60px"></label>
+    </div>
+    <div class="sheet-secur sheet-section">
+        <label>
+            Security
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{int-mod} + @{secur}"></button>
+            <input type="number" name="attr_secur" style="width: 60px"></label>
+    </div>
+    <div class="sheet-tr-inj sheet-section">
+        <label>
+            Treat Injury
+                <button type="roll" class="roller" name="roll_str" value="/roll 1d20 + @{wis-mod} + @{tr-inj}"></button>
+            <input type="number" name="attr_tr-inj" style="width: 60px"></label>
+    </div>
+    <div class="sheet-sk-label sheet-section">
+        <label>Skill</label>
+    </div>
+    <div class="sheet-skill-info sheet-section">
+        <label>Info</label>
+    </div>
+</div>
+<div class="sheet-feat-section">
+    <input type="hidden" class="sheet-featSelection" name="attr_featSelect" value="twoWeaponFighting" />
+    <input type="hidden" class="sheet-featSelection" name="attr_featSelectName" value="twoWeaponFighting" />
+    <input type="hidden" class="sheet-featSelection" name="attr_featSelectInfo" value="twoWeaponFighting" />
+    <div class="feat-flex sheet-section">
+        <div><button type="action" name="act_twoWeaponFighting" class="twoWeaponFighting force-feat-button"></button></div>
+        <div><button type="action" name="act_impTwoWeaponFighting" class="impTwoWeaponFighting force-feat-button"></button></div>
+        <div><button type="action" name="act_masTwoWeaponFighting" class="masTwoWeaponFighting force-feat-button"></button></div>
+        <div><button type="action" name="act_apLight" class="apLight force-feat-button"></button></div>
+        <div><button type="action" name="act_apMedium" class="apMedium force-feat-button"></button></div>
+        <div><button type="action" name="act_apHeavy" class="apHeavy force-feat-button"></button></div>
+        <div><button type="action" name="act_ftCaution" class="ftCaution force-feat-button"></button></div>
+        <div><button type="action" name="act_impCaution" class="impCaution force-feat-button"></button></div>
+        <div><button type="action" name="act_masCaution" class="masCaution force-feat-button"></button></div>
+        <div><button type="action" name="act_critStrike" class="critStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_impCritStrike" class="impCritStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_masCritStrike" class="masCritStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_ftEmpathy" class="ftEmpathy force-feat-button"></button></div>
+        <div><button type="action" name="act_impEmpathy" class="impEmpathy force-feat-button"></button></div>
+        <div><button type="action" name="act_masEmpathy" class="masEmpathy force-feat-button"></button></div>
+        <div><button type="action" name="act_ftFlurry" class="ftFlurry force-feat-button"></button></div>
+        <div><button type="action" name="act_impFlurry" class="impFlurry force-feat-button"></button></div>
+        <div><button type="action" name="act_masFlurry" class="masFlurry force-feat-button"></button></div>
+        <div><button type="action" name="act_gearHead" class="gearHead force-feat-button"></button></div>
+        <div><button type="action" name="act_impGearHead" class="impGearHead force-feat-button"></button></div>
+        <div><button type="action" name="act_masGearHead" class="masGearHead force-feat-button"></button></div>
+        <div><button type="action" name="act_ftConditioning" class="ftConditioning force-feat-button"></button></div>
+        <div><button type="action" name="act_impConditioning" class="impConditioning force-feat-button"></button></div>
+        <div><button type="action" name="act_masConditioning" class="masConditioning force-feat-button"></button></div>
+        <div><button type="action" name="act_powerAttack" class="powerAttack force-feat-button"></button></div>
+        <div><button type="action" name="act_impPowerAttack" class="impPowerAttack force-feat-button"></button></div>
+        <div><button type="action" name="act_masPowerAttack" class="masPowerAttack force-feat-button"></button></div>
+        <div><button type="action" name="act_powerBlast" class="powerBlast force-feat-button"></button></div>
+        <div><button type="action" name="act_impPowerBlast" class="impPowerBlast force-feat-button"></button></div>
+        <div><button type="action" name="act_masPowerBlast" class="masPowerBlast force-feat-button"></button></div>
+        <div><button type="action" name="act_rapidShot" class="rapidShot force-feat-button"></button></div>
+        <div><button type="action" name="act_impRapidShot" class="impRapidShot force-feat-button"></button></div>
+        <div><button type="action" name="act_masRapidShot" class="masRapidShot force-feat-button"></button></div>
+        <div><button type="action" name="act_sniperShot" class="sniperShot force-feat-button"></button></div>
+        <div><button type="action" name="act_impSniperShot" class="impSniperShot force-feat-button"></button></div>
+        <div><button type="action" name="act_masSniperShot" class="masSniperShot force-feat-button"></button></div>
+        <div><button type="action" name="act_blasterUse" class="blasterUse force-feat-button"></button></div>
+        <div><button type="action" name="act_blasterProf" class="blasterProf force-feat-button"></button></div>
+        <div><button type="action" name="act_blasterFocus" class="blasterFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_rifleUse" class="rifleUse force-feat-button"></button></div>
+        <div><button type="action" name="act_rifleProf" class="rifleProf force-feat-button"></button></div>
+        <div><button type="action" name="act_rifleFocus" class="rifleFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_lightsaberUse" class="lightsaberUse force-feat-button"></button></div>
+        <div><button type="action" name="act_lightsaberProf" class="lightsaberProf force-feat-button"></button></div>
+        <div><button type="action" name="act_lightsaberFocus" class="lightsaberFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_meleeUse" class="meleeUse force-feat-button"></button></div>
+        <div><button type="action" name="act_meleeProf" class="meleeProf force-feat-button"></button></div>
+        <div><button type="action" name="act_meleeFocus" class="meleeFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_jediDefense" class="jediDefense force-feat-button"></button></div>
+        <div><button type="action" name="act_impJediDefense" class="impJediDefense force-feat-button"></button></div>
+        <div><button type="action" name="act_masJediDefense" class="masJediDefense force-feat-button"></button></div>
+        <div><button type="action" name="act_ftToughness" class="ftToughness force-feat-button"></button></div>
+        <div><button type="action" name="act_impToughness" class="impToughness force-feat-button"></button></div>
+        <div><button type="action" name="act_masToughness" class="masToughness force-feat-button"></button></div>
+        <div><button type="action" name="act_forceFocus" class="forceFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceFocus" class="impForceFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceFocus" class="masForceFocus force-feat-button"></button></div>
+        <div><button type="action" name="act_ftDueling" class="ftDueling force-feat-button"></button></div>
+        <div><button type="action" name="act_impDueling" class="impDueling force-feat-button"></button></div>
+        <div><button type="action" name="act_masDueling" class="masDueling force-feat-button"></button></div>
+        <div><button type="action" name="act_closeCombat" class="closeCombat force-feat-button"></button></div>
+        <div><button type="action" name="act_impCloseCombat" class="impCloseCombat force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_crossComputerUse" class="crossComputerUse force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_crossDemolitions" class="crossDemolitions force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_crossStealth" class="crossStealth force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_crossRepair" class="crossRepair force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_crossSecurity" class="crossSecurity force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_crossTreat-Injury" class="crossTreat-Injury force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_dualStrike" class="dualStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_impDualStrike" class="impDualStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_masDualStrike" class="masDualStrike force-feat-button"></button></div>
+        <div><button type="action" name="act_finesseMelee" class="finesseMelee force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_finesseLightsabers" class="finesseLightsabers force-feat-button"></button></div>
+        <div></div>
+        <div></div>
+        <div><button type="action" name="act_preciseShot1" class="preciseShot1 force-feat-button"></button></div>
+        <div><button type="action" name="act_preciseShot2" class="preciseShot2 force-feat-button"></button></div>
+        <div><button type="action" name="act_preciseShot3" class="preciseShot3 force-feat-button"></button></div>
+        <div><button type="action" name="act_preciseShot4" class="preciseShot4 force-feat-button"></button></div>
+        <div><button type="action" name="act_preciseShot5" class="preciseShot5 force-feat-button"></button></div>
+        <div></div>
+    </div>
+    <div class="sheet-feat-name sheet-section">
+        <span name="attr_featSelectName" style="color: #cbcbcb; font-weight: bold; padding-top: 5px;"></span>
+    </div>
+    <div class="sheet-feat-info sheet-section">
+        <span name="attr_featSelectInfo" style="color: #33b397; font-weight: bold; white-space: pre-wrap; overflow: auto"></span>
+    </div>
+    <div class="sheet-force-feat-share-area sheet-feat">
+        <label style="text-align: center;">Share<button type="roll" class="sheet-feat-share" name="roll_feat-share" style="display: none;" value="&{template:share} {{title=@{featSelectName} }} {{desc=@{featSelectInfo} }}"></button></label>
+    </div>
+</div>
+<div class="sheet-power-section">
+    <input type="hidden" class="sheet-forceSelection" name="attr_forceSelect" value="fpHeal" />
+    <input type="hidden" class="sheet-forceSelection" name="attr_forceSelectName" value="Force" />
+    <input type="hidden" class="sheet-forceSelection" name="attr_forceSelectInfo" value="Something" />
+    <div class="force-flex sheet-section">
+        <div><button type="action" name="act_fpHeal" class="fpHeal force-feat-button"></button></div>
+        <div><button type="action" name="act_impHeal" class="impHeal force-feat-button"></button></div>
+        <div><button type="action" name="act_masHeal" class="masHeal force-feat-button"></button></div>
+        <div><button type="action" name="act_forceAura" class="forceAura force-feat-button"></button></div>
+        <div><button type="action" name="act_forceShield" class="forceShield force-feat-button"></button></div>
+        <div><button type="action" name="act_forceArmor" class="forceArmor force-feat-button"></button></div>
+        <div><button type="action" name="act_forceSpeed" class="forceSpeed force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceSpeed" class="impForceSpeed force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceSpeed" class="masForceSpeed force-feat-button"></button></div>
+        <div><button type="action" name="act_forceValor" class="forceValor force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceValor" class="impForceValor force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceValor" class="masForceValor force-feat-button"></button></div>
+        <div><button type="action" name="act_forceResistance" class="forceResistance force-feat-button"></button></div>
+        <div><button type="action" name="act_forceImmunity" class="forceImmunity force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_energyResistance" class="energyResistance force-feat-button"></button></div>
+        <div><button type="action" name="act_impResistance" class="impResistance force-feat-button"></button></div>
+        <div><button type="action" name="act_masResistance" class="masResistance force-feat-button"></button></div>
+        <div><button type="action" name="act_forceBarrier" class="forceBarrier force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceBarrier" class="impForceBarrier force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceBarrier" class="masForceBarrier force-feat-button"></button></div>
+        <div><button type="action" name="act_battleMeditation" class="battleMeditation force-feat-button"></button></div>
+        <div><button type="action" name="act_impBattleMeditation" class="impBattleMeditation force-feat-button"></button></div>
+        <div><button type="action" name="act_masBattleMeditation" class="masBattleMeditation force-feat-button"></button></div>
+        <div><button type="action" name="act_forceBody" class="forceBody force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceBody" class="impForceBody force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceBody" class="masForceBody force-feat-button"></button></div>
+        <div><button type="action" name="act_fpRevitalize" class="fpRevitalize force-feat-button"></button></div>
+        <div><button type="action" name="act_impRevitalize" class="impRevitalize force-feat-button"></button></div>
+        <div><button type="action" name="act_masRevitalize" class="masRevitalize force-feat-button"></button></div>
+        <div><button type="action" name="act_affectMind" class="affectMind force-feat-button"></button></div>
+        <div><button type="action" name="act_dominateMind" class="dominateMind force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_forceDeflect" class="forceDeflect force-feat-button"></button></div>
+        <div><button type="action" name="act_forceReflect" class="forceReflect force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_fpStun" class="fpStun force-feat-button"></button></div>
+        <div><button type="action" name="act_impStun" class="impStun force-feat-button"></button></div>
+        <div><button type="action" name="act_masStun" class="masStun force-feat-button"></button></div>
+        <div><button type="action" name="act_fpStunDroid" class="fpStunDroid force-feat-button"></button></div>
+        <div><button type="action" name="act_impStunDroid" class="impStunDroid force-feat-button"></button></div>
+        <div><button type="action" name="act_masStunDroid" class="masStunDroid force-feat-button"></button></div>
+        <div><button type="action" name="act_fpChoke" class="fpChoke force-feat-button"></button></div>
+        <div><button type="action" name="act_impChoke" class="impChoke force-feat-button"></button></div>
+        <div><button type="action" name="act_masChoke" class="masChoke force-feat-button"></button></div>
+        <div><button type="action" name="act_fpSlow" class="fpSlow force-feat-button"></button></div>
+        <div><button type="action" name="act_impSlow" class="impSlow force-feat-button"></button></div>
+        <div><button type="action" name="act_masSlow" class="masSlow force-feat-button"></button></div>
+        <div><button type="action" name="act_fpFear" class="fpFear force-feat-button"></button></div>
+        <div><button type="action" name="act_impFear" class="impFear force-feat-button"></button></div>
+        <div><button type="action" name="act_masFear" class="masFear force-feat-button"></button></div>
+        <div><button type="action" name="act_fpLightning" class="fpLightning force-feat-button"></button></div>
+        <div><button type="action" name="act_impLightning" class="impLightning force-feat-button"></button></div>
+        <div><button type="action" name="act_masLightning" class="masLightning force-feat-button"></button></div>
+        <div><button type="action" name="act_forcePush" class="forcePush force-feat-button"></button></div>
+        <div><button type="action" name="act_impForcePush" class="impForcePush force-feat-button"></button></div>
+        <div><button type="action" name="act_masForcePush" class="masForcePush force-feat-button"></button></div>
+        <div><button type="action" name="act_drainLife" class="drainLife force-feat-button"></button></div>
+        <div><button type="action" name="act_deathField" class="deathField force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_forceSuppression" class="forceSuppression force-feat-button"></button></div>
+        <div><button type="action" name="act_forceBreach" class="forceBreach force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_throwLightsaber" class="throwLightsaber force-feat-button"></button></div>
+        <div><button type="action" name="act_impThrowLightsaber" class="impThrowLightsaber force-feat-button"></button></div>
+        <div></div>
+        <div><button type="action" name="act_drainForce" class="drainForce force-feat-button"></button></div>
+        <div><button type="action" name="act_impDrainForce" class="impDrainForce force-feat-button"></button></div>
+        <div><button type="action" name="act_masDrainForce" class="masDrainForce force-feat-button"></button></div>
+        <div><button type="action" name="act_forceScream" class="forceScream force-feat-button"></button></div>
+        <div><button type="action" name="act_impForceScream" class="impForceScream force-feat-button"></button></div>
+        <div><button type="action" name="act_masForceScream" class="masForceScream force-feat-button"></button></div>
+        <div><button type="action" name="act_mindTrick" class="mindTrick force-feat-button"></button></div>
+        <div><button type="action" name="act_impMindTrick" class="impMindTrick force-feat-button"></button></div>
+        <div></div>
+    </div>
+    <div class="sheet-force-name sheet-section">
+        <span name="attr_forceSelectName" style="color: #cbcbcb; font-weight: bold; padding-top: 5px;"></span>
+    </div>
+    <div class="sheet-force-info sheet-section">
+        <span name="attr_forceSelectInfo" style="color: #33b397; font-weight: bold; white-space: pre-wrap; overflow: auto"></span>
+    </div>
+    <div class="sheet-force-feat-share-area sheet-force">
+        <label style="text-align: center;">Share<button type="roll" class="sheet-feat-share" name="roll_feat-share" style="display: none;" value="&{template:share} {{title=@{forceSelectName} }} {{desc=@{forceSelectInfo} }}"></button></label>
+    </div>
+</div>
+
+<rolltemplate class="sheet-rolltemplate-share">
+    <div class="sheet-container" style="padding: 8px; border: 2px solid #ac9523; color: #cbcbcb; background-color: black; ">
+        <div class="sheet-header" style="padding: 7px; border: 3px solid #33b397; border-radius: 3px; color: #cbcbcb; text-align: center; background-color: #0f4035;">
+            <div class="sheet-title">{{title}}</div>
+        </div>
+        <p style="padding-top: -2px"></p>
+        <div class="sheet-content" style="padding: 4px; border: 3px solid #33b397; border-radius: 3px; color: #33b397; accent-color: #0f4035; background-color: #0f4035; font-weight: bold;">
+            <div class="sheet-desc">{{desc}}</div>
+        </div>
+    </div>
+</rolltemplate>
+
+<script type="text/worker">
+    const sectionbuttonlist = ["combat-tab","main-info-tab","equipment-tab","skill-tab","feat-tab","power-tab","inventory-tab","journal-tab"];
+    sectionbuttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sectionsel: button
+            });
+        });
+    });
+
+    const armorbuttonlist = ["implant","head","gloves","left-wrist","body","right-wrist","belt","right-weap1","left-weap1","right-weap2","left-weap2"];
+    armorbuttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                armorTab: button
+            });
+        });
+    });
+    
+    //const featList = ["twoWeaponFighting", "impTwoWeaponFighting", "masTwoWeaponFighting", "apLight", "apMedium", "apHeavy", "ftCaution", "impCaution", "masCaution", "critStrike", "impCritStrike", "masCritStrike", "ftEmpathy", "impEmpathy", "masEmpathy", "ftFlurry", "impFlurry", "masFlurry", "gearHead", "impGearHead", "masGearHead", "ftConditioning", "impConditioning", "masConditioning", "powerAttack", "impPowerAttack", "masPowerAttack", "powerBlast", "impPowerBlast", "masPowerBlast", "rapidShot", "impRapidShot", "masRapidShot", "sniperShot", "impSniperShot", "masSniperShot", "blasterUse", "blasterProf", "blasterFocus", "rifleUse", "rifleProf", "rifleFocus", "lightsaberUse", "lightsaberProf", "lightsaberFocus", "meleeUse", "meleeProf", "meleeFocus", "jediDefense", "impJediDefense", "masJediDefense", "ftToughness", "impToughness", "masToughness", "forceFocus", "impForceFocus", "masForceFocus", "ftDueling", "impDueling", "masDueling", "closeCombat", "impCloseCombat", "crossComputerUse", "crossDemolitions", "crossStealth", "crossRepair", "crossSecurity", "crossTreat-Injury", "dualStrike", "impDualStrike", "masDualStrike", "finesseMelee", "finesseLightsabers", "regenHealth", "forceRegen", "stealthRun", "preciseShot1", "preciseShot2", "preciseShot3", "preciseShot4", "preciseShot5"];
+    on('clicked:twoWeaponFighting', () => { setAttrs({ 
+        "featSelect": "twoWeaponFighting",
+        "featSelectName": "Two-Weapon Fighting",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat reduces the attack penalty of a character wielding a double-bladed weapon or two weapons (one in each hand). The normal penalties of -6 (main hand)/-10 (off hand) are reduced by 0/4, to a total of -6/-6. Use of a \"balanced\" weapon in the off hand can further reduce the attack penalty by 2/0, to a total of -4/-6."
+    }); });
+    on('clicked:impTwoWeaponFighting', () => { setAttrs({ 
+        "featSelect": "impTwoWeaponFighting",
+        "featSelectName": "Improved Two-Weapon Fighting",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nTwo-Weapon Fighting\n\nThis feat further reduces the attack penalty of a character wielding a double-bladed weapon or two weapons (one in each hand). This feat reduces the attack penalty by an additional 2/2, to a total of -4 (main hand)/-4 (off hand). Use of a \"balanced\" weapon in the off hand can further reduce the attack penalty by 2/0, to a total of -2/-4"
+    }); });
+    on('clicked:masTwoWeaponFighting', () => { setAttrs({ 
+        "featSelect": "masTwoWeaponFighting",
+        "featSelectName": "Master Two-Weapon Fighting",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nTwo-Weapon Fighting\nImproved Two-Weapon Fighting\n\nThis feat again reduces the attack penalty for characters using double-bladed weapons or two weapons (one in each hand) by 2/2, for a total of -2 (main hand)/-2 (off hand). Use of a \"balanced\" weapon in the off hand can further reduce the attack penalty by 2/0 to a final total of 0/-2, negating it almost entirely."
+    }); });
+    on('clicked:apLight', () => { setAttrs({ 
+        "featSelect": "apLight",
+        "featSelectName": "Armor Proficiency: Light",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat allows a character to wear Light armor. Characters without this feat CANNOT wear Light of heavier armor. Wookies and droids cannot wear armor suits."
+    }); });
+    on('clicked:apMedium', () => { setAttrs({ 
+        "featSelect": "apMedium",
+        "featSelectName": "Armor Proficiency: Medium",
+        "featSelectInfo": "Prerequisites:\nArmor Proficiency: Light\n\nThis feat allows a character to wear Medium armor. Characters without this feat CANNOT wear Medium or heavier armor. Wookies and droids cannot wear. Wookies and droids cannot wear armor suits."
+    }); });
+    on('clicked:apHeavy', () => { setAttrs({ 
+        "featSelect": "apHeavy",
+        "featSelectName": "Armor Proficiency: Heavy",
+        "featSelectInfo": "Prerequisites:\nArmor Proficiency: Light\nArmor Proficiency: Medium\n\nThis feat allows a character to wear Heavy armor. Characters without this feat CANNOT wear Heavy armor. Wookies and droids cannot wear armor suits."
+    }); });
+    on('clicked:ftCaution', () => { setAttrs({ 
+        "featSelect": "ftCaution",
+        "featSelectName": "Caution",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feet gives a +1 skill point bonus to both Demolitions and Stealth. You must have at least one skill point in a particular skill to recieve this bonus to that skill."
+    }); });
+    on('clicked:impCaution', () => { setAttrs({ 
+        "featSelect": "impCaution",
+        "featSelectName": "Improved Caution",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nCaution\n\nThis feat gives a +2 skill point bonus to both Demolitions and Stealth. This replaces the +1 bonus given by Caution. You much have at least one skill point in a particular skill to recieve a this bonus to that skill."
+    }); });
+    on('clicked:masCaution', () => { setAttrs({ 
+        "featSelect": "masCaution",
+        "featSelectName": "Master Caution",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nCaution\nImproved Caution\n\nThis feat gives a +3 skill point bonus to both Demolitions and Stealth. This replaces the +2 bonus given by improved Caution. You must have at least one skill point in a particular skill to recieve a this bonus to that skill skill to recieve a this bonus this bonud to that skill."
+    }); });
+    on('clicked:critStrike', () => { setAttrs({ 
+        "featSelect": "critStrike",
+        "featSelectName": "Critical Strike",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, this feat doubles the criical threat range of melee attack (e.g., if a weapon needs a roll of 20, a critical hit will result on 19 or 20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character's level + attacking character's Strength modifier. This feat lowers Defense by -5 for one round when used. Critical Strike works with melee weapons only."
+    }); });
+    on('clicked:impCritStrike', () => { setAttrs({ 
+        "featSelect": "impCritStrike",
+        "featSelectName": "Improved Critical Strike",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nCritical Strike\n\nWhen activated, this feat triples the critical threat range of melee attacks (e.g., if a weapon needs a roll of 20, a critical hit will result on 18-20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character's level + attacking character's Strength modifier. This feat lowers Defense by by -5 for one round when used. Improved Critical Strike works with melee weapons only."
+    }); });
+    on('clicked:masCritStrike', () => { setAttrs({ 
+        "featSelect": "masCritStrike",
+        "featSelectName": "Master Critical Strike",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nCritical Strike\nImproved Critical Strike\n\nWhen activated, this feat quadruples the critical threat range of melee attacks (e.g., if a weapon needs a roll of 20, a critical hit will result on 17-20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character's level + attacking character's Strength modifier. This feat. This feat lowers Defense by -5 for one round when used. Improved Critical Strike works with by -5 when used. Master Critical Strike works with melee weapons only."
+    }); });
+    on('clicked:ftEmpathy', () => { setAttrs({ 
+        "featSelect": "ftEmpathy",
+        "featSelectName": "Empathy",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives a +1 skill point to Persuade, Awareness and Treat Injury."
+    }); });
+    on('clicked:impEmpathy', () => { setAttrs({ 
+        "featSelect": "impEmpathy",
+        "featSelectName": "Improved Empathy",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nEmpathy\n\nThis feat gives a +2 skill point bonus to Persuade, Awareness and Treat Injury. This feat replaces the +1 bonus given by Empathy."
+    }); });
+    on('clicked:masEmpathy', () => { setAttrs({ 
+        "featSelect": "masEmpathy",
+        "featSelectName": "Master Empathy",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nEmpathy\nImproved Empathy\n\nThis feat gives a +3 skill point bonus to Persuade, Awareness, and Treat Injury. This feat replaces the +2 bonus given by Improved Empathy."
+    }); });
+    on('clicked:ftFlurry', () => { setAttrs({ 
+        "featSelect": "ftFlurry",
+        "featSelectName": "Flurry",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, this feat allows a character to make an extra melee attack during the round. Characters suffer -2 to Defense while using this feat and until their next round. They also suffer a -4 penalty to all attacks that round."
+    }); });
+    on('clicked:impFlurry', () => { setAttrs({ 
+        "featSelect": "impFlurry",
+        "featSelectName": "Improved Flurry",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nFlurry\n\nWhen activated, this feat allows a character to make an extra melee attack during the round. Characters suffer -1 to Defense while using this feat and until their next round. They also suffer a -2 penalty to all attacks that round."
+    }); });
+    on('clicked:masFlurry', () => { setAttrs({ 
+        "featSelect": "masFlurry",
+        "featSelectName": "Master Flurry",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nFlurry\nImproved Flurry\n\nWhen activated, this feat allows a character to make an extra melee attack during the round. Characters suffer no penalties when using Master Flurry."
+    }); });
+    on('clicked:gearHead', () => { setAttrs({ 
+        "featSelect": "gearHead",
+        "featSelectName": "Gear Head",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives a +1 skill point bonus to Repair, Security and Computer Use. You must have at least one skill in a particular skill to receive this bonus."
+    }); });
+    on('clicked:impGearHead', () => { setAttrs({ 
+        "featSelect": "impGearHead",
+        "featSelectName": "Improved Gear Head",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nGear Head\n\nThis feat gives a +2 skill point bonus to Repair, Security and Computer Use. This replaces the +1 bonus given by Gear head. You must have at least one skill in a particular skill to receive this bonus."
+    }); });
+    on('clicked:masGearHead', () => { setAttrs({ 
+        "featSelect": "masGearHead",
+        "featSelectName": "Master Gear Head",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nGear Head\nImproved Gear Head\n\nThis feat gives a +3 skill point bonus to Repair, Security and Computer Use. This replaces the +2 bonus given by Gear head. You must have at least one skill in a particular skill to receive this bonus."
+    }); });
+    on('clicked:ftConditioning', () => { setAttrs({ 
+        "featSelect": "ftConditioning",
+        "featSelectName": "Conditioning",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat provides a +1 bonus to all saving throws, reflecting the character’s excellent physical conditioning. "
+    }); });
+    on('clicked:impConditioning', () => { setAttrs({ 
+        "featSelect": "impConditioning",
+        "featSelectName": "Improved Conditioning",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nConditioning\n\nThis feat provides a +2 bonus to all saving throws, reflecting the character’s excellent physical conditioning. "
+    }); });
+    on('clicked:masConditioning', () => { setAttrs({ 
+        "featSelect": "masConditioning",
+        "featSelectName": "Master Conditioning",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nConditioning\nImproved Conditioning\n\nThis feat provides a +3 bonus to all saving throws, reflecting the character’s excellent physical conditioning. "
+    }); });
+    on('clicked:powerAttack', () => { setAttrs({ 
+        "featSelect": "powerAttack",
+        "featSelectName": "Power Attack",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, Power Attack increases melee damage by +3, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Strength modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:impPowerAttack', () => { setAttrs({ 
+        "featSelect": "impPowerAttack",
+        "featSelectName": "Improved Power Attack",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nPower Attack\n\nWhen activated, Power Attack increases melee damage by +7, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Strength modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:masPowerAttack', () => { setAttrs({ 
+        "featSelect": "masPowerAttack",
+        "featSelectName": "Master Power Attack",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nPower Attack\nImproved Power Attack\n\nWhen activated, Power Attack increases melee damage by +12, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Strength modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:powerBlast', () => { setAttrs({ 
+        "featSelect": "powerBlast",
+        "featSelectName": "Power Blast",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, Power Blast increases ranged damage by +3, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Dexterity modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:impPowerBlast', () => { setAttrs({ 
+        "featSelect": "impPowerBlast",
+        "featSelectName": "Improved Power Blast",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nPower Blast\n\nWhen activated, Power Blast increases ranged damage by +7, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Dexterity modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:masPowerBlast', () => { setAttrs({ 
+        "featSelect": "masPowerBlast",
+        "featSelectName": "Master Power Blast",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nPower Blast\nImproved Power Blast\n\nWhen activated, Power Blast increases ranged damage by +12, but attacks are made with a penalty of -3 to hit. Additionally, the critical multiplier is increased by 1 (e.g., if a critical hit would normally double damage, it would triple damage when power attack is used). Finally, on a critical hit, the target is knocked back unless they make a Fortitude save at a DC of the attacking character’s level + twice the attacking character’s Dexterity modifier. Used to quickly dispatch groups of easy-to-hit opponents."
+    }); });
+    on('clicked:rapidShot', () => { setAttrs({ 
+        "featSelect": "rapidShot",
+        "featSelectName": "Rapid Shot",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, this feat allows a character to make an extra ranged weapon attack during the round. Characters suffer -4 to defense while using this feat and until their next round. They also suffer a -4 penalty to all attacks that round."
+    }); });
+    on('clicked:impRapidShot', () => { setAttrs({ 
+        "featSelect": "impRapidShot",
+        "featSelectName": "Improved Rapid Shot",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nRapid Shot\n\nWhen activated, this feat allows a character to make an extra ranged weapon attack during the round. Characters suffer -2 to defense while using this feat and until their next round. They also suffer a -2 penalty to all attacks that round."
+    }); });
+    on('clicked:masRapidShot', () => { setAttrs({ 
+        "featSelect": "masRapidShot",
+        "featSelectName": "Master Rapid Shot",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nRapid Shot\nImproved Rapid Shot\n\nWhen activated, this feat allows a character to make an extra ranged weapon attack during the round. Characters suffer no penalties when using Master Rapid Shot"
+    }); });
+    on('clicked:sniperShot', () => { setAttrs({ 
+        "featSelect": "sniperShot",
+        "featSelectName": "Sniper Shot",
+        "featSelectInfo": "Prerequisites:\nNone\n\nWhen activated, this feat doubles the critical threat range of ranged attacks (e.g., if a weapon needs a roll of 20, a critical hit will result on 19 or 20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character’s level + attacking character’s Intelligence modifier. This feat lowers Defense by -5 when used. Sniper shot works with ranged weapons only."
+    }); });
+    on('clicked:impSniperShot', () => { setAttrs({ 
+        "featSelect": "impSniperShot",
+        "featSelectName": "Improved Sniper Shot",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nSniper Shot\n\nWhen activated, this feat triples the critical threat range of ranged attacks (e.g., if a weapon needs a roll of 20, a critical hit will result on 18-20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character’s level + attacking character’s Intelligence modifier. This feat lowers Defense by -5 when used. Sniper shot works with ranged weapons only."
+    }); });
+    on('clicked:masSniperShot', () => { setAttrs({ 
+        "featSelect": "masSniperShot",
+        "featSelectName": "Master Sniper Shot",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nSniper Shot\nImproved Sniper Shot\n\nWhen activated, this feat quadruples the critical threat range of ranged attacks (e.g., if a weapon needs a roll of 20, a critical hit will result on 17-20). If the attack hits, the target is also stunned for 2 rounds unless they make a Fortitude save at a DC of the attacking character’s level + attacking character’s Intelligence modifier. This feat lowers Defense by -5 when used. Sniper shot works with ranged weapons only."
+    }); });
+    on('clicked:blasterUse', () => { setAttrs({ 
+        "featSelect": "blasterUse",
+        "featSelectName": "Weapon Proficiency: Blaster Pistol",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives a character basic training in the use of standard Blaster Pistol weapon types."
+    }); });
+    on('clicked:blasterProf', () => { setAttrs({ 
+        "featSelect": "blasterProf",
+        "featSelectName": "Weapon Focus: Blaster Pistol",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Blaster Pistol\n\nAdds +1 attack bonus with Blaster Pistols."
+    }); });
+    on('clicked:blasterFocus', () => { setAttrs({ 
+        "featSelect": "blasterFocus",
+        "featSelectName": "Weapon Specialization: Blaster Pistol",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Blaster Pistol\nWeapon Focus: Blaster Pistol\nLevel 4 Soldier\n\nAdds a +2 damage bonus with Blaster Pistols."
+    }); });
+    on('clicked:rifleUse', () => { setAttrs({ 
+        "featSelect": "rifleUse",
+        "featSelectName": "Weapon Proficiency: Blaster Rifle",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives a character basic training in the use of standard Blaster Rifle weapon types."
+    }); });
+    on('clicked:rifleProf', () => { setAttrs({ 
+        "featSelect": "rifleProf",
+        "featSelectName": "Weapon Focus: Blaster Rifle",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Blaster Rifle\n\nAdds +1 attack bonus with Blaster Rifles."
+    }); });
+    on('clicked:rifleFocus', () => { setAttrs({ 
+        "featSelect": "rifleFocus",
+        "featSelectName": "Weapon Specialization: Blaster Rifle",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Blaster Rifle\nWeapon Focus: Blaster Rifle\nLevel 4 Soldier\n\nAdds a +2 damage bonus with Blaster Rifles."
+    }); });
+    on('clicked:lightsaberUse', () => { setAttrs({ 
+        "featSelect": "lightsaberUse",
+        "featSelectName": "Weapon Proficiency: Lightsaber",
+        "featSelectInfo": "Prerequisites:\nJedi Classes Only\n\nThis feat gives a character basic training in the use of standard Lightsaber weapon types."
+    }); });
+    on('clicked:lightsaberProf', () => { setAttrs({ 
+        "featSelect": "lightsaberProf",
+        "featSelectName": "Weapon Focus: Lightsaber",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Lightsaber\nJedi Classes Only\n\nAdds +1 attack bonus with Lightsabers."
+    }); });
+    on('clicked:lightsaberFocus', () => { setAttrs({ 
+        "featSelect": "lightsaberFocus",
+        "featSelectName": "Weapon Specialization: Lightsaber",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Lightsaber\nWeapon Focus: Lightsaber\nJedi Guardian\n\nAdds a +2 damage bonus with Lightsabers."
+    }); });
+    on('clicked:meleeUse', () => { setAttrs({ 
+        "featSelect": "meleeUse",
+        "featSelectName": "Weapon Proficiency: Melee Weapons",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives a character basic training in the use of hand-to-hand Melee weapon types, such as vibroblades and other powered or unpowered items."
+    }); });
+    on('clicked:meleeProf', () => { setAttrs({ 
+        "featSelect": "meleeProf",
+        "featSelectName": "Weapon Focus: Melee Weapons",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Melee Weapons\n\nAdds +1 attack bonus with Melee Weapons."
+    }); });
+    on('clicked:meleeFocus', () => { setAttrs({ 
+        "featSelect": "meleeFocus",
+        "featSelectName": "Weapon Specialization: Melee Weapons",
+        "featSelectInfo": "Prerequisites:\nWeapon Proficiency: Melee Weapons\nWeapon Focus: Melee Weapons\nLevel 4 Soldier\n\nAdds a +2 damage bonus with Melee Weapons."
+    }); });
+    on('clicked:jediDefense', () => { setAttrs({ 
+        "featSelect": "jediDefense",
+        "featSelectName": "Jedi Defense",
+        "featSelectInfo": "Prerequisites:\nJedi Classes only\nLightsaber Equipped\n\nThis feat allows a character to deflect energy-based blaster bolts at any time as long as they have a lightsaber equipped. When a character is fired upon, an opposed roll is made against the attack. If the result is greater than the attack roll, the blaster bolt is deflected. If the attack is beaten by 10 or more, the bold is deflected back at the enemy. Jedi classes receive this feat at 1st level."
+    }); });
+    on('clicked:impJediDefense', () => { setAttrs({ 
+        "featSelect": "impJediDefense",
+        "featSelectName": "Advanced Jedi Defense",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nJedi Defense\n\nThis feat gives a character a +3 bonus to all deflection rolls. Certain items may apply a bonus or penalty to this ability."
+    }); });
+    on('clicked:masJediDefense', () => { setAttrs({ 
+        "featSelect": "masJediDefense",
+        "featSelectName": "Master Jedi Defense",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nJedi Defense\nAdvanced Jedi Defense\n\nThis feat gives a character a +6 bonus to all deflection rolls. Certain items may apply a bonus or penalty to this ability. This feat replaces the bonus given by Advanced Jedi Defense."
+    }); });
+    on('clicked:ftToughness', () => { setAttrs({ 
+        "featSelect": "ftToughness",
+        "featSelectName": "Toughness",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThis feat gives the character 1 extra vitality point every time they level up. This bonus is retroactive for levels previously gained."
+    }); });
+    on('clicked:impToughness', () => { setAttrs({ 
+        "featSelect": "impToughness",
+        "featSelectName": "Improved Toughness",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nToughness\n\nThe character is very resilient. This feat subtracts 10% of any damage over 20 points suffered. The character retains the +1 vitality point per level granted by Toughness."
+    }); });
+    on('clicked:masToughness', () => { setAttrs({ 
+        "featSelect": "masToughness",
+        "featSelectName": "Master Toughness",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nToughness\nImproved Toughness\n\nThe character is further fortified against damage. The character gains an additional +1 vitality point at each level up, retroactive for levels previously gained. This is in addition to the +1 vitality point per level granted by Toughness, and the 10% damage resistance granted by Improved Toughness."
+    }); });
+    on('clicked:forceFocus', () => { setAttrs({ 
+        "featSelect": "forceFocus",
+        "featSelectName": "Force Focus",
+        "featSelectInfo": "Prerequisites:\nJedi Consular\n\nThis feat adds +2 to the Difficulty Class for all saving throws against the character’s Force powers. This feat is always active."
+    }); });
+    on('clicked:impForceFocus', () => { setAttrs({ 
+        "featSelect": "impForceFocus",
+        "featSelectName": "Improved Force Focus",
+        "featSelectInfo": "Prerequisites:\nLevel 6 Jedi Consular\n\nThis feat adds +3 to the Difficulty Class for all saving throws against the character’s Force powers. This feat is always active. This feat replaces Force Focus."
+    }); });
+    on('clicked:masForceFocus', () => { setAttrs({ 
+        "featSelect": "masForceFocus",
+        "featSelectName": "Master Force Focus",
+        "featSelectInfo": "Prerequisites:\nLevel 12 Jedi Consular\n\nThis feat adds +4 to the Difficulty Class for all saving throws against the character’s Force powers. This feat is always active. This feat replaces Improved Force Focus."
+    }); });
+    on('clicked:ftDueling', () => { setAttrs({ 
+        "featSelect": "ftDueling",
+        "featSelectName": "Dueling",
+        "featSelectInfo": "Prerequisites:\nNone\n\nCharacters that focus on using single one-handed weapons in battle gain +1 to attack and +1 to defense due to the efficiency of this form of combat. This applies to both ranged and melee weapons. This feat also applies when using unarmed combat."
+    }); });
+    on('clicked:impDueling', () => { setAttrs({ 
+        "featSelect": "impDueling",
+        "featSelectName": "Improved Dueling",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nDueling\n\nContinued focus on the use of single one-handed weapons grants +2 to attack and +2 to defense. This applies to both ranged and melee weapons. This feat also applies when using unarmed combat."
+    }); });
+    on('clicked:masDueling', () => { setAttrs({ 
+        "featSelect": "masDueling",
+        "featSelectName": "Master Dueling",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nDueling\nImproved Dueling\n\nCharacters that have mastered the use of single one-handed weapons gain +3 to attack and +3 to defense. This applies to both ranged and melee weapons. This feat also applies when using unarmed combat."
+    }); });
+    on('clicked:closeCombat', () => { setAttrs({ 
+        "featSelect": "closeCombat",
+        "featSelectName": "Close Combat",
+        "featSelectInfo": "Prerequisites:\nLevel 4\n\nThis feat trains ranged weapon characters to fight effectively in close combat. When the character’s target is at short range, they receive a +1 attack bonus. Additionally, when these characters are engaged in melee combat their attackers receive only a +4 Attack bonus instead of the usual +6."
+    }); });
+    on('clicked:impCloseCombat', () => { setAttrs({ 
+        "featSelect": "impCloseCombat",
+        "featSelectName": "Improved Close Combat",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nClose Combat\n\nThe character has mastered fighting with ranged weapons in close combat. When the character’s target is at short range, they receive a +2 attack bonus. Additionally, when these characters are engages in melee combat their attackers receive only a +2 Attack Bonus instead of the usual +6. The effects of this feat replace those of Close Combat."
+    }); });
+    on('clicked:crossComputerUse', () => { setAttrs({ 
+        "featSelect": "crossComputerUse",
+        "featSelectName": "Class Skill: Computer Use",
+        "featSelectInfo": "Prerequisites:\nComputer Use is a Cross-Class Skill\n\nThis feat gives a character advanced training with computers. The Computer Use skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:crossDemolitions', () => { setAttrs({ 
+        "featSelect": "crossDemolitions",
+        "featSelectName": "Class Skill: Demolitions",
+        "featSelectInfo": "Prerequisites:\nDemolitions is a Cross-Class Skill\n\nThis feat gives a character advanced training with explosives. The Demolition skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:crossStealth', () => { setAttrs({ 
+        "featSelect": "crossStealth",
+        "featSelectName": "Class Skill: Stealth",
+        "featSelectInfo": "Prerequisites:\nStealth is a Cross-Class Skill\n\nThis feat gives a character advanced training with stealth. The Stealth skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:crossRepair', () => { setAttrs({ 
+        "featSelect": "crossRepair",
+        "featSelectName": "Class Skill: Repair",
+        "featSelectInfo": "Prerequisites:\nRepair is a Cross-Class Skill\n\nThis feat gives a character advanced training with machines. The Repair skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:crossSecurity', () => { setAttrs({ 
+        "featSelect": "crossSecurity",
+        "featSelectName": "Class Skill: Security",
+        "featSelectInfo": "Prerequisites:\nSecurity is a Cross-Class Skill\n\nThis feat gives a character advanced training with security systems. The Security skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:crossTreat-Injury', () => { setAttrs({ 
+        "featSelect": "crossTreat-Injury",
+        "featSelectName": "Class Skill: Treat Injury",
+        "featSelectInfo": "Prerequisites:\nTreat Injury is a Cross-Class Skill\n\nThis feat gives a character advanced training with medicine. The Treat Injury skill is no longer considered cross-class and can be purchased for one skill point per skill level."
+    }); });
+    on('clicked:dualStrike', () => { setAttrs({ 
+        "featSelect": "dualStrike",
+        "featSelectName": "Dual Strike",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThe character has advanced training using teamwork to defeat enemies. When attacking an enemy that another party member is also attacking, the character gets a +2 bonus to hit."
+    }); });
+    on('clicked:impDualStrike', () => { setAttrs({ 
+        "featSelect": "impDualStrike",
+        "featSelectName": "Improved Dual Strike",
+        "featSelectInfo": "Prerequisites:\nLevel 4\nDual Strike\n\nContinued teamwork training grants the character a +4 bonus to hit an enemy that is being attacked by another party member."
+    }); });
+    on('clicked:masDualStrike', () => { setAttrs({ 
+        "featSelect": "masDualStrike",
+        "featSelectName": "Master Dual Strike",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nDual Strike\nImproved Dual Strike\n\nThe character has mastered working together withing a small team. The character gets a +6 bonus to hit an enemy that is being attacked by another party member."
+    }); });
+    on('clicked:finesseMelee', () => { setAttrs({ 
+        "featSelect": "finesseMelee",
+        "featSelectName": "Finesse: Melee Weapons",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThe character has mastered using grace and speed with melee weapons instead of raw power. The character can add either their Dexterity or Strength bonus to hit, whichever is higher."
+    }); });
+    on('clicked:finesseLightsabers', () => { setAttrs({ 
+        "featSelect": "finesseLightsabers",
+        "featSelectName": "Finesse: Lightsabers",
+        "featSelectInfo": "Prerequisites:\nNone\n\nThe character has mastered using grace and speed with lightsabers instead of raw power. The character can add either their Dexterity or Strength bonus to hit, whichever is higher."
+    }); });
+    on('clicked:preciseShot1', () => { setAttrs({ 
+        "featSelect": "preciseShot1",
+        "featSelectName": "Precise Shot I",
+        "featSelectInfo": "Prerequisites:\nLevel 4\n\nThis feat increases the damage done with ranged weapons by +1. This feat also applies a -2 penalty to attempt to deflect the blaster bolt. This bonus is automatic whenever a ranged weapon is equipped. This feat doesn't apply to grenades or thrown lightsabers."
+    }); });
+    on('clicked:preciseShot2', () => { setAttrs({ 
+        "featSelect": "preciseShot2",
+        "featSelectName": "Precise Shot II",
+        "featSelectInfo": "Prerequisites:\nLevel 8\nPrecise Shot I\n\nThis feat increases the damage done with ranged weapons by +2. This feat also applies a -4 penalty to attempt to deflect the blaster bolt. This bonus is automatic whenever a ranged weapon is equipped. This feat doesn't apply to grenades or thrown lightsabers."
+    }); });
+    on('clicked:preciseShot3', () => { setAttrs({ 
+        "featSelect": "preciseShot3",
+        "featSelectName": "Precise Shot III",
+        "featSelectInfo": "Prerequisites:\nLevel 12\nPrecise Shot I\nPrecise Shot II\n\nThis feat increases the damage done with ranged weapons by +4. This feat also applies a -6 penalty to attempt to deflect the blaster bolt. This bonus is automatic whenever a ranged weapon is equipped. This feat doesn't apply to grenades or thrown lightsabers."
+    }); });
+    on('clicked:preciseShot4', () => { setAttrs({ 
+        "featSelect": "preciseShot4",
+        "featSelectName": "Precise Shot IV",
+        "featSelectInfo": "Prerequisites:\nLevel 16\nPrecise Shot I\nPrecise Shot II\nPrecise Shot III\n\nThis feat increases the damage done with ranged weapons by +6. This feat also applies a -8 penalty to attempt to deflect the blaster bolt. This bonus is automatic whenever a ranged weapon is equipped. This feat doesn't apply to grenades or thrown lightsabers."
+    }); });
+    on('clicked:preciseShot5', () => { setAttrs({ 
+        "featSelect": "preciseShot5",
+        "featSelectName": "Precise Shot V",
+        "featSelectInfo": "Prerequisites:\nLevel 20\nPrecise Shot I\nPrecise Shot II\nPrecise Shot III\nPrecise Shot IV\n\nThis feat increases the damage done with ranged weapons by +8. This feat also applies a -10 penalty to attempt to deflect the blaster bolt. This bonus is automatic whenever a ranged weapon is equipped. This feat doesn't apply to grenades or thrown lightsabers."
+    }); });
+    on('clicked:fpHeal', () => { setAttrs({ 
+        "forceSelect": "fpHeal",
+        "forceSelectName": "Heal",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 6\n\nThis power heals all party members within a 15-meter radius. It heals 5 vitality points + 1 point for every Charisma modifier, Wisdom modifier, and level of the Force user. This power does not affect droids."
+    }); });
+    on('clicked:impHeal', () => { setAttrs({ 
+        "forceSelect": "impHeal",
+        "forceSelectName": "Improved Heal",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 12\nHeal\n\nThis power heals all party members in a 15-meter radius. Each party member gains 15 vitality points + 1 point for every Charisma modifier, Wisdom modifier, and level of the Force user. Poisons are neutralized by this effect. This power does not affect droids."
+    }); });
+    on('clicked:masHeal', () => { setAttrs({ 
+        "forceSelect": "masHeal",
+        "forceSelectName": "Master Heal",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 18\nHeal\nImproved Heal\n\nThis power heals all party members in a 15-meter radius. Each party member gains 15 vitality points + 1 point for every Charisma modifier, Wisdom modifier, and two times the level of the Force user. Poisons and stun effects are neutralized by this effect. This power does not affect droids."
+    }); });
+    on('clicked:forceAura', () => { setAttrs({ 
+        "forceSelect": "forceAura",
+        "forceSelectName": "Force Aura",
+        "forceSelectInfo": "Light Side Power\n\nRestricted By Armor\n\nWhen this power is activated, the Jedi is temporarily granted a +2 bonus to Defense and all saving throws for 4 rounds."
+    }); });
+    on('clicked:forceShield', () => { setAttrs({ 
+        "forceSelect": "forceShield",
+        "forceSelectName": "Force Shield",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 6\nForce Aura\n\nRestricted By Armor\n\nWhen this power is activated, the Jedi is temporarily granted a +4 bonus to Defense and all saving throws for 4 rounds."
+    }); });
+    on('clicked:forceArmor', () => { setAttrs({ 
+        "forceSelect": "forceArmor",
+        "forceSelectName": "Force Armor",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 12\nForce Aura\nForce Shield\n\nRestricted By Armor\n\nWhen this power is activated, the Jedi is temporarily granted a +6 bonus to Defense and all saving throws for 4 rounds."
+    }); });
+    on('clicked:forceSpeed', () => { setAttrs({ 
+        "forceSelect": "forceSpeed",
+        "forceSelectName": "Burst of Speed",
+        "forceSelectInfo": "Universal Power\n\nRestricted By Armor\n\nThis power allows a Jedi to move very swiftly, pressing his or her body to its physical limits. For the duration of this effect (7 rounds), movement speed is doubled and 2 Defense is gained."
+    }); });
+    on('clicked:impForceSpeed', () => { setAttrs({ 
+        "forceSelect": "impForceSpeed",
+        "forceSelectName": "Knight Speed",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\nBurst of Speed\n\nRestricted By Armor\n\nThis power allows a Jedi to move more swiftly than the physical limitations of his or her body should allow. For the duration of this effect (7 rounds), movement speed is doubled, Defense is increased by 4, and 1 attack per round is gained when unarmed or using a weapon to attack."
+    }); });
+    on('clicked:masForceSpeed', () => { setAttrs({ 
+        "forceSelect": "masForceSpeed",
+        "forceSelectName": "Master Speed",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 15\nBurst of Speed\nKnight Speed\n\nRestricted By Armor\n\nThis power allows a Jedi to move with such speed that, for the duration of the effect (7rounds), movement speed is doubled, Defense if increased by 4, and 2 attacks per round are gained when unarmed or using a weapon to attack."
+    }); });
+    on('clicked:forceValor', () => { setAttrs({ 
+        "forceSelect": "forceValor",
+        "forceSelectName": "Force Valor",
+        "forceSelectInfo": "Light Side Power\n\nRestricted By Armor\n\nThis power increases the physical attributes and saving throws of the Jedi and all party members by 2 points. The effect lasts for 4 rounds."
+    }); });
+    on('clicked:impForceValor', () => { setAttrs({ 
+        "forceSelect": "impForceValor",
+        "forceSelectName": "Knight Valor",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 9\nForce Valor\n\nRestricted By Armor\n\nThis power increases the physical attributes and saving throws of the Jedi and all party members by 3 points, and also grants immunity to poison. The effect lasts for 4 rounds. Knight Valor replaces the bonus granted by Force Valor."
+    }); });
+    on('clicked:masForceValor', () => { setAttrs({ 
+        "forceSelect": "masForceValor",
+        "forceSelectName": "Master Valor",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 15\nForce Valor\nKnight Valor\n\nRestricted By Armor\n\nThis power increases the physical attributes and saving throws of the Jedi and all party members by 5 points, and also grants immunity to poison. The effect lasts for 4 rounds. Knight Valor replaces the bonus granted by Force Valor."
+    }); });
+    on('clicked:forceResistance', () => { setAttrs({ 
+        "forceSelect": "forceResistance",
+        "forceSelectName": "Force Resistance",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\n\nRestricted By Armor\n\nThis power offers some protection from direct Force Power attacks of Jedi opponents, possibly negating their effects. The attacking Jedi makes an opposed roll using d20 + his or her level versus a DC of 10 + the defending character’s level. If the attacker’s result is greater, the attack succeeds. If the defender’s total is greater, the attack has no effect. Force Resistance lasts for 10 rounds."
+    }); });
+    on('clicked:forceImmunity', () => { setAttrs({ 
+        "forceSelect": "forceImmunity",
+        "forceSelectName": "Force Immunity",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 15\nForce Resistance\n\nRestricted By Armor\n\nThis power offers some protection from direct Force Power attacks of Jedi opponents, possibly negating their effects. The attacking Jedi makes an opposed roll using d20 + his or her level versus a DC of 15 + the defending character’s level. If the attacker’s result is greater, the attack succeeds. If the defender’s total is greater, the attack has no effect. Force Immunity lasts for 10 rounds."
+    }); });
+    on('clicked:energyResistance', () => { setAttrs({ 
+        "forceSelect": "energyResistance",
+        "forceSelectName": "Energy Resistance",
+        "forceSelectInfo": "Universal Power\n\nRestricted By Armor\n\nThis power shields the Jedi in the Force, absorbing the first 6 points of damage from energy, sonic, fire, cold and electrical attacks. Damage over and above the first 6 points is suffered as normal. This effect lasts for 20 rounds."
+    }); });
+    on('clicked:impResistance', () => { setAttrs({ 
+        "forceSelect": "impResistance",
+        "forceSelectName": "Improved Energy Resistance",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\nEnergy Resistance\n\nRestricted By Armor\n\nThis power allows the jedi to shield the entire party in the Force, absorbing the first 12 points of damage from energy, sonic, fire, cold and electrical attacks. Damage over and above the first 12 points is suffered as normal. This effect lasts for 20 rounds."
+    }); });
+    on('clicked:masResistance', () => { setAttrs({ 
+        "forceSelect": "masResistance",
+        "forceSelectName": "Master Energy Resistance",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 17\nEnergy Resistance\nImproved Energy Resistance\n\nRestricted By Armor\n\nThis power allows the jedi to shield the entire party in the Force, absorbing the first 20 points of damage from energy, sonic, fire, cold, electrical and blaster attacks directed at them. Damage over and above the first 20 points is suffered as normal. This effect lasts for 20 rounds."
+    }); });
+    on('clicked:forceBarrier', () => { setAttrs({ 
+        "forceSelect": "forceBarrier",
+        "forceSelectName": "Force Barrier",
+        "forceSelectInfo": "Light Side Power\n\nRestricted By Armor\n\nThis power shields the Jedi in the Force, absorbing the first 4 points of damage from slashing, bludgeoning, and piercing attacks. Damage over and above the first 4 points is suffered as normal. This effect lasts for 6 rounds."
+    }); });
+    on('clicked:impForceBarrier', () => { setAttrs({ 
+        "forceSelect": "impForceBarrier",
+        "forceSelectName": "Improved Force Barrier",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 9\nForce Barrier\n\n\nRestricted By Armor\n\nThis power shields the Jedi in the Force, absorbing the first 8 points of damage from slashing, bludgeoning, and piercing attacks. Damage over and above the first 8 points is suffered as normal. This effect lasts for 8 rounds."
+    }); });
+    on('clicked:masForceBarrier', () => { setAttrs({ 
+        "forceSelect": "masForceBarrier",
+        "forceSelectName": "Master Force Barrier",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 15\nForce Barrier\nImproved Force Brrier\n\nRestricted By Armor\n\nThis power shields the Jedi in the Force, absorbing the first 15 points of damage from slashing, bludgeoning, and piercing attacks. Damage over and above the first 15 points is suffered as normal. This effect lasts for 10 rounds."
+    }); });
+    on('clicked:battleMeditation', () => { setAttrs({ 
+        "forceSelect": "battleMeditation",
+        "forceSelectName": "Battle Meditation",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 6\n\nRestricted By Armor\n\nThis power grants +2 to attack rolls, +2 to damage, and +2 to Will saves to all party members. It also increases the vitality point regeneration rate of the party. This effect lasts for 5 rounds and will not affect any droids in the party."
+    }); });
+    on('clicked:impBattleMeditation', () => { setAttrs({ 
+        "forceSelect": "impBattleMeditation",
+        "forceSelectName": "Improved Battle Meditation",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 12\nBattle Meditation\n\nRestricted By Armor\n\nThis power grants +2 to attack rolls, +2 to damage, and +2 to Will saves to all party members. It also increases the vitality point regeneration rate of the party. Additionally, any enemies within 10 meters that fail a Will save against a DC of 5 + the attacking character's level + attacking character's Wisdom and Charisma modifiers suffer a -2 to attack rolls, -2 to damage, and -2 to Will saves. This effect lasts for 5 rounds will not affect any droids in the party."
+    }); });
+    on('clicked:masBattleMeditation', () => { setAttrs({ 
+        "forceSelect": "masBattleMeditation",
+        "forceSelectName": "Master Battle Meditation",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 18\nBattle Meditation\nImproved Battle Meditation\n\nRestricted By Armor\n\nThis power grants +4 to attack rolls, +4 to damage, and +4 to Will saves to all party members. It also increases the vitality point regeneration rate of the party. Additionally, any enemies within 15 meters that fail a Will save against a DC of 5 + the attacking character's level + attacking character's Wisdom and Charisma modifiers suffer -4 to attack rolls, -4 to damage, and -4 to Will saves. This effect lasts for 5 rounds and will not affect any droids in the party."
+    }); });
+    on('clicked:forceBody', () => { setAttrs({ 
+        "forceSelect": "forceBody",
+        "forceSelectName": "Force Body",
+        "forceSelectInfo": "Universal Power\n\nThis power enables the character to use their own health to fuel Force powers. All Force powers take 50% of their cost from vitality points and 50% from Force points. This effect lasts for 6 rounds."
+    }); });
+    on('clicked:impForceBody', () => { setAttrs({ 
+        "forceSelect": "impForceBody",
+        "forceSelectName": "Improved Force Body",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nLevel 9 Jedi\nForce Body\n\nThis power enables the character to use part of their own health to fuel Force powers. All Force powers take 40% of their cost from vitality points and 40% from force points. The total Force point cost for powers is actually less using this effect. This effect lasts for 6 rounds."
+    }); });
+    on('clicked:masForceBody', () => { setAttrs({ 
+        "forceSelect": "masForceBody",
+        "forceSelectName": "Master Force Body",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nLevel 15 Jedi\nForce Body\nImproved Force Body\n\nThis power enables the character to use part of their own health to fuel Force powers. All Force powers take 30% of their cost from vitality points and 30% from force points. The total Force point cost for powers is actually less using this effect. This effect lasts for 6 rounds."
+    }); });
+    on('clicked:fpRevitalize', () => { setAttrs({ 
+        "forceSelect": "fpRevitalize",
+        "forceSelectName": "Revitalize",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 9\n\nRestricted By Armor\n\nThis power allows the Jedi to rekindle the life energies of any non-droid fallen ally. This brings the single closest fallen ally back to consciousness with 5% of their total Vitality Points."
+    }); });
+    on('clicked:impRevitalize', () => { setAttrs({ 
+        "forceSelect": "impRevitalize",
+        "forceSelectName": "Improved Revitalize",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 15\nRevitalize\n\nRestricted By Armor\n\nThis power allows the Jedi to rekindle the life energies of any of their non-droid fallen allies. This brings all allies back to consciousness with 5% of their total Vitality Points."
+    }); });
+    on('clicked:masRevitalize', () => { setAttrs({ 
+        "forceSelect": "masRevitalize",
+        "forceSelectName": "Master Revitalize",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 21\nRevitalize\nImproved Revitalize\n\nRestricted By Armor\n\nThis power allows the Jedi to rekindle the life energies of any of their non-droid fallen allies. This brings all allies back to consciousness with 10% of their total Vitality Points."
+    }); });
+    on('clicked:affectMind', () => { setAttrs({ 
+        "forceSelect": "affectMind",
+        "forceSelectName": "Affect Mind",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nJedi\n\nAffect Mind enables persuasive use of the Force. Once a Jedi has this power, they will gain the option to use it in conversation as appropriate. Success is not guaranteed for extreme commands or if the target is strong willed. This power does not affect droids."
+    }); });
+    on('clicked:dominateMind', () => { setAttrs({ 
+        "forceSelect": "dominateMind",
+        "forceSelectName": "Dominate Mind",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 6\nAffect Mind\n\nDominate Mind enables persuasive use of the Force. Once a Jedi has this power, they will gain the option to use it in conversation as appropriate. Dominate Mind is more powerful than Affect Mind, and very few beings can resist its effects. This power does not affect droids."
+    }); });
+    on('clicked:forceDeflect', () => { setAttrs({ 
+        "forceSelect": "forceDeflect",
+        "forceSelectName": "Force Deflection",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 6\n\nThis power gives the Jedi the ability to deflect any ranged attacks without a lightsaber. The Jedi can't reflect blaster bolts back at enemies, however. This power is always in effect."
+    }); });
+    on('clicked:forceReflect', () => { setAttrs({ 
+        "forceSelect": "forceReflect",
+        "forceSelectName": "Force Reflection",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 12\nForce Deflection\n\nThis power gives the Jedi the ability to deflect ranged attacks without a lightsaber. Unlike with Force Deflection, the Jedi can also reflect these attacks back at enemies. This power is always in effect and provides an extra +3 to all Deflection rolls."
+    }); });
+    on('clicked:fpStun', () => { setAttrs({ 
+        "forceSelect": "fpStun",
+        "forceSelectName": "Stun",
+        "forceSelectInfo": "Light Side Power\n\nThis power allows the Jedi to assault the mind of an opponent, effectively stunning them for 2 rounds. A successful Fortitude save by the target at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers means the target is slowed for the duration instead of stunned. This power does not affect droids."
+    }); });
+    on('clicked:impStun', () => { setAttrs({ 
+        "forceSelect": "impStun",
+        "forceSelectName": "Stasis",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 9\nStun\n\nAn opponent targeted by this power is held in stasis, unable to move or take any action for 3 rounds. A successful Fortitude save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers means the target is slowed for the duration instead of stunned. This power does not affect droids."
+    }); });
+    on('clicked:masStun', () => { setAttrs({ 
+        "forceSelect": "masStun",
+        "forceSelectName": "Stasis Field",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 15\nStun\nStasis\n\nRestricted By Armor\n\nThis power can lull the senses of a group, placing all hostile creatures within a 10-meter radius of a target enemy in a catatonic stasis. The victims remain in this state for 3 rounds, but a successful Fortitude save versus a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers means the targets are slowed instead of stunned. This power does not affect droids."
+    }); });
+    on('clicked:fpStunDroid', () => { setAttrs({ 
+        "forceSelect": "fpStunDroid",
+        "forceSelectName": "Stun Droid",
+        "forceSelectInfo": "Light Side Power\n\nThis power can send a surge of energy through the processor of a droid, rendering them immobile for 3 rounds. The droid also takes damage equivalent to the attacking character's level. A successful Fortitude save by the target at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers negates the stun and reduces damage by half."
+    }); });
+    on('clicked:impStunDroid', () => { setAttrs({ 
+        "forceSelect": "impStunDroid",
+        "forceSelectName": "Disable Droid",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 6\nStun Droid\n\nDisable Droid temporarily shuts down all droids within 5 meters of a target droid, inflicting damage equivalent to the attacking character's level. Affected droids remain disabled for 3 rounds. A Fortitude save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers will negate the stun and reduce damage by half."
+    }); });
+    on('clicked:masStunDroid', () => { setAttrs({ 
+        "forceSelect": "masStunDroid",
+        "forceSelectName": "Destroy Droid",
+        "forceSelectInfo": "Light Side Power\nPrerequisites:\nCharacter Level 12\nStun Droid\n\nDisable Droid Destroy Droid affects all droids within 6 meters of a target droid, disabling them for 3 round and inflicting 1-6 damage per level of the attacking character. A successful Fortitude save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers results in half damage."
+    }); });
+    on('clicked:fpChoke', () => { setAttrs({ 
+        "forceSelect": "fpChoke",
+        "forceSelectName": "Wound",
+        "forceSelectInfo": "Dark Side Power\n\nThis power triggers spasms in the victim's lungs, causing great pain and inflicting 2/3rds of the attacking character's level in damage every round for the duration (2 rounds). A successful Fortitude save at DC 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers results in no effect. This power does not affect droids."
+    }); });
+    on('clicked:impChoke', () => { setAttrs({ 
+        "forceSelect": "impChoke",
+        "forceSelectName": "Choke",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites: Character Level 9\nWound\n\nThis power constricts the throat of a target at range, stunning and inflicting 2/3rds of the attacking character's level in damage every round for the duration (2 rounds). The target also suffers a temporary (5 rounds) -4 penalty to Constitution, Dexterity and Strength. A successful Fortitude save at DC 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers results in no effect. This power does not affect droids."
+    }); });
+    on('clicked:masChoke', () => { setAttrs({ 
+        "forceSelect": "masChoke",
+        "forceSelectName": "Kill",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 12\nWound\nChoke\n\nThis ranged power causes the target to choke for 2 rounds and inflicts damage close to half the target's maximum Vitality points. If the target makes a Fortitude save versus DC 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers they are not choked, but instead suffer damage equal to the attacking character's level. This power does not affect droids."
+    }); });
+    on('clicked:fpSlow', () => { setAttrs({ 
+        "forceSelect": "fpSlow",
+        "forceSelectName": "Slow",
+        "forceSelectInfo": "Dark Side Power\n\nThis power clouds the mind, making a target's actions unusually sluggish. The victim suffers a -2 penalty to Defense, Reflex saves, and attack rolls. The effect lasts for 2 rounds unless a successful Will save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers is made. This power does not affect droids."
+    }); });
+    on('clicked:impSlow', () => { setAttrs({ 
+        "forceSelect": "impSlow",
+        "forceSelectName": "Affliction",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 6\nSlow\n\nAffliction causes a target to suffer as though poisoned, unless a Fortitude saving throw is made at a DC of 2 Failure causes the loss of seven points from each physical attribute (1 point every round over 5 rounds), and the target is slowed for the duration. A successful save negates this effect. This power does not affect droids."
+    }); });
+    on('clicked:masSlow', () => { setAttrs({ 
+        "forceSelect": "masSlow",
+        "forceSelectName": "Plague",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 12\nSlow\nAffliction\n\nRestricted By Armor\n\nPlague causes a target to suffer as though deathly ill from poison, losing 12 points from each physical attribute (1 point every round over 5 rounds). The target is also slowed for the duration. Plague has a DC of 100, making it impossible to save against its effects. This power does not affect droids."
+    }); });
+    on('clicked:fpFear', () => { setAttrs({ 
+        "forceSelect": "fpFear",
+        "forceSelectName": "Fear",
+        "forceSelectInfo": "Dark Side Power\n\nThis power causes fear in a single creature, such that they cower in fear of the attacking Jedi for 2 rounds. A successful Will save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers negates this effect. This power does not affect droids."
+    }); });
+    on('clicked:impFear', () => { setAttrs({ 
+        "forceSelect": "impFear",
+        "forceSelectName": "Horror",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 6\nFear\n\nThis power causes all hostile creatures within a 5-meter radius of a target enemy to cower in catatonic fear of the attacking Jedi for 3 rounds. A successful Will save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers negates this effect. This power does not affect droids."
+    }); });
+    on('clicked:masFear', () => { setAttrs({ 
+        "forceSelect": "masFear",
+        "forceSelectName": "Insanity",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 12\nFear\nHorror\n\nThis power can greatly confuse an enemy force, inflaming paranoia and doubt. All enemies within a 10-meter radius of the target must make a Will save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers or cower in catatonic terror for 4 rounds. This power does not affect droids."
+    }); });
+    on('clicked:fpLightning', () => { setAttrs({ 
+        "forceSelect": "fpLightning",
+        "forceSelectName": "Shock",
+        "forceSelectInfo": "Dark Side Power\n\nRestricted By Armor\n\nThis power unleashes an energy attack on a single target enemy. The victim suffers 1-6 points of damage per each of the attacking character's levels. A successful Will save by the target at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers reduces damage by half."
+    }); });
+    on('clicked:impLightning', () => { setAttrs({ 
+        "forceSelect": "impLightning",
+        "forceSelectName": "Force Lightning",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 9\nShock\n\nRestricted By Armor\n\nThis power unleashes an energy attack on all hostile creatures up 16 meters directly in front of the Jedi. Victims suffer 1-6 points of damage per each of the attacking character's levels. A successful Will save by targets at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers reduces damage by half."
+    }); });
+    on('clicked:masLightning', () => { setAttrs({ 
+        "forceSelect": "masLightning",
+        "forceSelectName": "Force Storm",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 18\nShock\nForce Lightning\n\nRestricted By Armor\n\nThis power unleashes a direct energy attack on all hostile creatures within 10 meters of a target enemy. Victims suffer 1-6 points of damage to both Vitality and Force Point totals per each of the attacking character's levels. A successful Will save by the target at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers reduces damage by half."
+    }); });
+    on('clicked:forcePush', () => { setAttrs({ 
+        "forceSelect": "forcePush",
+        "forceSelectName": "Force Push",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nJedi\n\nAn opponent targeted by this power is pushed back 5 meters, thrown to the ground stunned for 1 round, and suffers damage equal to the attacking character's level. A successful Reflex save by the target at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifier means the target is not stunned, but still suffers damage equal to half the Jedi's Level"
+    }); });
+    on('clicked:impForcePush', () => { setAttrs({ 
+        "forceSelect": "impForcePush",
+        "forceSelectName": "Force Whirlwind",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\nForce Push\n\nThis power encircles the target victim in a small maelstrom of air and dust, inflicting one-third of the character's level in damage at the start of the target's turn, and rendering them unable to take any action for the next 3 rounds. A successful Reflex save at a DC of 5 + the attacking character's Wisdom and Charisma modifiers negates the damage and the immobilizing effects altogether. This power does not affect droids equipped with energy shield hardware."
+    }); });
+    on('clicked:masForcePush', () => { setAttrs({ 
+        "forceSelect": "masForcePush",
+        "forceSelectName": "Force Wave",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 15\nForce Push\nForce Whirlwind\n\nThis power creates a telekinetic explosion around the Jedi. All enemies withing 15 meters are thrown 5 meters, fall to the ground and are incapacitated for 2 rounds, and take damage equal to one and a half times the attacking character's level. A successful Reflex save at a DC of 5 + the attacking character's Wisdom and Charisma modifiers means an enemy is not stunned, but still suffers half damage."
+    }); });
+    on('clicked:drainLife', () => { setAttrs({ 
+        "forceSelect": "drainLife",
+        "forceSelectName": "Drain Life",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 9\n\nRestricted By Armor\n\nThis power allows the Jedi to drain the life of others to heal him or herself. 1-4 points are drained for every level of the character. A successful Fortitude save at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers reduces damage by half. This power does not affect droids."
+    }); });
+    on('clicked:deathField', () => { setAttrs({ 
+        "forceSelect": "deathField",
+        "forceSelectName": "Death Field",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 18\nDrain Life\n\nRestricted By Armor\n\nDeath Field targets all enemies within a 10-meterradius, draining life to heal the attacking Jedi. The damage is 1-4 per level of the character. A Fortitude save made at a DC of 5 + the attacking character's level + the attacking character's Wisdom and Charisma modifiers reduces the damage by half. The character is healed the equivalent of the most damage dealt to any single enemy. This power does not affect droids."
+    }); });
+    on('clicked:forceSuppression', () => { setAttrs({ 
+        "forceSelect": "forceSuppression",
+        "forceSelectName": "Force Suppression",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\n\nRestricted By Armor\n\nThis ability will cancel first and second tier Force powers active on the target, The affected Force powers are Force Aura, Force Shield, Force Valor, Knight Valor, Burst of Speed, Knight Speed, Energy Resistance, and Force Resistance. These powers are instantly cancelled, but the target can reactivate them."
+    }); });
+    on('clicked:forceBreach', () => { setAttrs({ 
+        "forceSelect": "forceBreach",
+        "forceSelectName": "Force Breach",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 15\nForce Suppression\n\nRestricted By Armor\n\nThis ability will cancel Force powers active on the target. The affected Force powers are Force Aura, Force Shield, Force Armor, Force Valor, Knight Valor, Master Valor, Burst of Speed, Knight Speed, Master Speed, Energy Resistance, Improved Energy Resistance, Force Resistance, and Force Immunity. These powers are immediately shut down, but the target can reactivate them."
+    }); });
+    on('clicked:throwLightsaber', () => { setAttrs({ 
+        "forceSelect": "throwLightsaber",
+        "forceSelectName": "Throw Lightsaber",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nJedi\n\nRequires Lightsaber\n\nThrow lightsaber allows the character to attack a target at range by throwing a lightsaber, guiding it with the Force. The target must be at least 5 meters away. This attack always hits. Damage is a d6 for every two levels of the attacking character. NOTE: Once the lightsaber is thrown, it will automatically return to the Jedi's hand at the start of their next round."
+    }); });
+    on('clicked:impThrowLightsaber', () => { setAttrs({ 
+        "forceSelect": "impThrowLightsaber",
+        "forceSelectName": "Advanced Throw Lightsaber",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nCharacter Level 9\nThrow Lightsaber\n\nRequires Lightsaber\n\nThis power allows the character to attack up to three separate targets with a single lightsaber throw. The first target must be at least 5 meters away and each additional target must be within 5 meters of the previous target. This attack always hits. Damage is a d6 for every two levels of the attacking character. NOTE: Once the lightsaber is thrown, it will automatically return to the Jedi's hand at the start of their next round."
+    }); });
+    on('clicked:drainForce', () => { setAttrs({ 
+        "forceSelect": "drainForce",
+        "forceSelectName": "Drain Force",
+        "forceSelectInfo": "Dark Side Power\n\nRestricted By Armor\n\nThis power allows the Jedi to draw raw Force energy from a single opponent to him or herself. The targeted opponent loses 10 Force Points or half that amount if they make a Will save against a DC of 5 + the attacker's level + attacker's Wisdom and Charisma modifiers. A Jedi can't draw more Force Points from an opponent than they have total."
+    }); });
+    on('clicked:impDrainForce', () => { setAttrs({ 
+        "forceSelect": "impDrainForce",
+        "forceSelectName": "Improved Drain Force",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 9\nDrain Force\n\nRestricted By Armor\n\nThis power allows the Jedi to draw raw Force energy from a single opponent to him or herself. The targeted opponent loses 20 Force Points or half that amount if they make a Will save against a DC of 5 + the attacker's level + attacker's Wisdom and Charisma modifiers. A Jedi can't draw more Force Points from an opponent than they have total."
+    }); });
+    on('clicked:masDrainForce', () => { setAttrs({ 
+        "forceSelect": "masDrainForce",
+        "forceSelectName": "Master Drain Force",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 15\nDrain Force\nImproved Drain Force\n\nRestricted By Armor\n\nThis power allows the Jedi to draw raw Force energy from all hostile creatures within 10 meters of a target enemy to him or herself. The targeted opponents loses 30 Force Points or half that amount if they make a Will save against a DC of 5 + the attacker's level + attacker's Wisdom and Charisma modifiers. A Jedi can't draw more Force Points from an opponent than they have total."
+    }); });
+    on('clicked:forceScream', () => { setAttrs({ 
+        "forceSelect": "forceScream",
+        "forceSelectName": "Force Scream",
+        "forceSelectInfo": "Dark Side Power\n\nThis power creates a wave of sound that does 3d6 points of sonic damage and reduces attributes by 2 points to all enemies 10 meters in front of the attacking character for 6 rounds. A successful Will save by the target at a DC of 10 + the attacker's level + the attacker's Wisdom and Charisma modifiers reduces damage by half and negates the attribute penalties."
+    }); });
+    on('clicked:impForceScream', () => { setAttrs({ 
+        "forceSelect": "impForceScream",
+        "forceSelectName": "Improved Force Scream",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 9\nForce Scream\n\nThis power creates a wave of sound that does 5d6 points of sonic damage and reduces attributes by 4 points to all enemies 10 meters in front of the attacker for 6 rounds. A successful Will save by the target at a DC of 10 + the attacker's level + the attacker's Wisdom and Charisma modifiers reduces damage by half and negates the attribute penalties."
+    }); });
+    on('clicked:masForceScream', () => { setAttrs({ 
+        "forceSelect": "masForceScream",
+        "forceSelectName": "Master Force Scream",
+        "forceSelectInfo": "Dark Side Power\nPrerequisites:\nCharacter Level 15\nForce Scream\nImproved Force Scream\n\nThis power creates a wave of sound that does 7d6 points of sonic damage and reduces attributes by 6 points to all enemies within 10 meters of the attacker for 6 rounds. A successful Will save by the target at a DC of 10 + the attacker's level + the attacker's Wisdom and Charisma modifiers reduces damage by half and negates the attribute penalties."
+    }); });
+    on('clicked:mindTrick', () => { setAttrs({ 
+        "forceSelect": "mindTrick",
+        "forceSelectName": "Mind Trick",
+        "forceSelectInfo": "Universal Power\n\nMind Trick distracts a non-droid target making it easier to sneak by them. If the target fails a Will save of DC 5 + the attacking character's level and Wisdom and Charisma modifiers, then they are distracted for 6 rounds. Distracted targets won't notice the player unless the player gets too close or interacts with them."
+    }); });
+    on('clicked:impMindTrick', () => { setAttrs({ 
+        "forceSelect": "impMindTrick",
+        "forceSelectName": "Force Confusion",
+        "forceSelectInfo": "Universal Power\nPrerequisites:\nAny Prestige Class\nMind Trick\n\nForce Confusion is a more powerful version of Mind Trick that can actually cause an opponent to fight for you. If the target fails a Will save of DC 5 the attacking character's level and Wisdom and Charisma modifiers, then they will fight your opponents for 6 rounds. Only one opponent can be affected by Force Confusion at a time. This power only works on sentients; beasts and droids are immune."
+    }); });
+    on('clicked:', () => { setAttrs({ 
+        "forceSelect": "",
+        "forceSelectName": "",
+        "forceSelectInfo": ""
+    }); });
+</script>
